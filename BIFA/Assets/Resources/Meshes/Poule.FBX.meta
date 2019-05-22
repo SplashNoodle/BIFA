@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 054ad80bb789fff41a207b53fed19b39
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Box001
+    100002: Box002
+    100004: CATRigHead001
+    100006: CATRigHead002
+    100008: CATRigLArm1
+    100010: CATRigLArm2
+    100012: CATRigLArmCollarbone
+    100014: CATRigLArmDigit11
+    100016: CATRigLArmDigit12
+    100018: CATRigLArmDigit21
+    100020: CATRigLArmPalm
+    100022: CATRigLLeg1
+    100024: CATRigLLeg2
+    100026: CATRigLLegAnkle
+    100028: CATRigLLegDigit11
+    100030: CATRigLLegDigit12
+    100032: CATRigLLegDigit21
+    100034: CATRigLLegDigit22
+    100036: CATRigLLegDigit31
+    100038: CATRigLLegDigit32
+    100040: CATRigRArm1
+    100042: CATRigRArm2
+    100044: CATRigRArmCollarbone
+    100046: CATRigRArmDigit11
+    100048: CATRigRArmDigit12
+    100050: CATRigRArmDigit21
+    100052: CATRigRArmPalm
+    100054: CATRigRLeg1
+    100056: CATRigRLeg2
+    100058: CATRigRLegAnkle
+    100060: CATRigRLegDigit11
+    100062: CATRigRLegDigit12
+    100064: CATRigRLegDigit21
+    100066: CATRigRLegDigit22
+    100068: CATRigRLegDigit31
+    100070: CATRigRLegDigit32
+    100072: CATRigSpine1
+    100074: CATRigSpine2
+    100076: Group41442
+    100078: Plane001
+    100080: //RootNode
+    100082: Poule
+    100084: Yeux
+    400000: Box001
+    400002: Box002
+    400004: CATRigHead001
+    400006: CATRigHead002
+    400008: CATRigLArm1
+    400010: CATRigLArm2
+    400012: CATRigLArmCollarbone
+    400014: CATRigLArmDigit11
+    400016: CATRigLArmDigit12
+    400018: CATRigLArmDigit21
+    400020: CATRigLArmPalm
+    400022: CATRigLLeg1
+    400024: CATRigLLeg2
+    400026: CATRigLLegAnkle
+    400028: CATRigLLegDigit11
+    400030: CATRigLLegDigit12
+    400032: CATRigLLegDigit21
+    400034: CATRigLLegDigit22
+    400036: CATRigLLegDigit31
+    400038: CATRigLLegDigit32
+    400040: CATRigRArm1
+    400042: CATRigRArm2
+    400044: CATRigRArmCollarbone
+    400046: CATRigRArmDigit11
+    400048: CATRigRArmDigit12
+    400050: CATRigRArmDigit21
+    400052: CATRigRArmPalm
+    400054: CATRigRLeg1
+    400056: CATRigRLeg2
+    400058: CATRigRLegAnkle
+    400060: CATRigRLegDigit11
+    400062: CATRigRLegDigit12
+    400064: CATRigRLegDigit21
+    400066: CATRigRLegDigit22
+    400068: CATRigRLegDigit31
+    400070: CATRigRLegDigit32
+    400072: CATRigSpine1
+    400074: CATRigSpine2
+    400076: Group41442
+    400078: Plane001
+    400080: //RootNode
+    400082: Poule
+    400084: Yeux
+    2100000: 'Material #4'
+    2100002: No Name
+    2100004: 'Material #3'
+    2100006: 'Material #2'
+    2100008: COTCOTCOT_Queue_default
+    2300000: Box001
+    2300002: Box002
+    2300004: Group41442
+    2300006: Yeux
+    3300000: Box001
+    3300002: Box002
+    3300004: Group41442
+    3300006: Yeux
+    4300000: Plane001
+    4300002: Box002
+    4300004: Box001
+    4300006: Yeux
+    4300008: Group41442
+    9500000: //RootNode
+    13700000: Plane001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

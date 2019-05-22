@@ -1,0 +1,309 @@
+fileFormatVersion: 2
+guid: 39e81a11ebc4597458e506c19b16d562
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bone001
+    100004: Bone002
+    100006: Bone003(mirrored)
+    100008: Bone004
+    100010: Bone004(mirrored)
+    100012: Bone005
+    100014: Bone006
+    100016: Bone007
+    100018: Bone007(mirrored)
+    100020: Bone008
+    100022: Bone008(mirrored)
+    100024: Bone009
+    100026: Bone009(mirrored)
+    100028: Bone010
+    100030: Bone010(mirrored)
+    100032: Bone011
+    100034: Bone011(mirrored)
+    100036: Bone012
+    100038: Bone012(mirrored)
+    100040: Bone017
+    100042: Bone018
+    100044: Bone020
+    100046: Bone021
+    100048: Bone022
+    100050: Bone023
+    100052: Bone024
+    100054: Bone024(mirrored)
+    100056: Bone025
+    100058: Bone025(mirrored)
+    100060: Bone026
+    100062: Bone026(mirrored)
+    100064: Bone027
+    100066: Bone027(mirrored)
+    100068: Bone028
+    100070: Bone028(mirrored)
+    100072: Bone029
+    100074: Bone029(mirrored)
+    100076: Bone030
+    100078: Bone030(mirrored)
+    100080: Bone031
+    100082: Bone031(mirrored)
+    100084: Bone032
+    100086: Bone032(mirrored)
+    100088: Circle001
+    100090: Circle002
+    100092: Circle003
+    100094: Circle004
+    100096: Circle005
+    100098: Circle006
+    100100: Circle007
+    100102: Circle008
+    100104: Circle009
+    100106: Circle010
+    100108: Circle013
+    100110: Circle014
+    100112: Circle015
+    100114: Cochon
+    100116: cuisse_R
+    100118: ExposeTransform001
+    100120: ExposeTransform002
+    100122: ExposeTransform003
+    100124: ExposeTransform004
+    100126: IK Chain001
+    100128: IK Chain002
+    100130: IK Chain003
+    100132: IK Chain004
+    100134: Plane002
+    100136: Point001
+    100138: Point002
+    100140: Point003
+    100142: Point004
+    100144: Point005
+    100146: Point006
+    100148: Point007
+    100150: Point008
+    100152: Point009
+    100154: Point010
+    100156: Point011
+    100158: Point012
+    100160: Point013
+    100162: Point014
+    100164: Point015
+    100166: Point016
+    100168: Point017
+    100170: Point018
+    100172: Point019
+    100174: Point020
+    100176: Point021
+    100178: Point022
+    100180: Rectangle001
+    100182: Rectangle002
+    400000: //RootNode
+    400002: Bone001
+    400004: Bone002
+    400006: Bone003(mirrored)
+    400008: Bone004
+    400010: Bone004(mirrored)
+    400012: Bone005
+    400014: Bone006
+    400016: Bone007
+    400018: Bone007(mirrored)
+    400020: Bone008
+    400022: Bone008(mirrored)
+    400024: Bone009
+    400026: Bone009(mirrored)
+    400028: Bone010
+    400030: Bone010(mirrored)
+    400032: Bone011
+    400034: Bone011(mirrored)
+    400036: Bone012
+    400038: Bone012(mirrored)
+    400040: Bone017
+    400042: Bone018
+    400044: Bone020
+    400046: Bone021
+    400048: Bone022
+    400050: Bone023
+    400052: Bone024
+    400054: Bone024(mirrored)
+    400056: Bone025
+    400058: Bone025(mirrored)
+    400060: Bone026
+    400062: Bone026(mirrored)
+    400064: Bone027
+    400066: Bone027(mirrored)
+    400068: Bone028
+    400070: Bone028(mirrored)
+    400072: Bone029
+    400074: Bone029(mirrored)
+    400076: Bone030
+    400078: Bone030(mirrored)
+    400080: Bone031
+    400082: Bone031(mirrored)
+    400084: Bone032
+    400086: Bone032(mirrored)
+    400088: Circle001
+    400090: Circle002
+    400092: Circle003
+    400094: Circle004
+    400096: Circle005
+    400098: Circle006
+    400100: Circle007
+    400102: Circle008
+    400104: Circle009
+    400106: Circle010
+    400108: Circle013
+    400110: Circle014
+    400112: Circle015
+    400114: Cochon
+    400116: cuisse_R
+    400118: ExposeTransform001
+    400120: ExposeTransform002
+    400122: ExposeTransform003
+    400124: ExposeTransform004
+    400126: IK Chain001
+    400128: IK Chain002
+    400130: IK Chain003
+    400132: IK Chain004
+    400134: Plane002
+    400136: Point001
+    400138: Point002
+    400140: Point003
+    400142: Point004
+    400144: Point005
+    400146: Point006
+    400148: Point007
+    400150: Point008
+    400152: Point009
+    400154: Point010
+    400156: Point011
+    400158: Point012
+    400160: Point013
+    400162: Point014
+    400164: Point015
+    400166: Point016
+    400168: Point017
+    400170: Point018
+    400172: Point019
+    400174: Point020
+    400176: Point021
+    400178: Point022
+    400180: Rectangle001
+    400182: Rectangle002
+    2100000: 'Material #23'
+    4300000: Plane002
+    7400000: CochonAnim
+    9500000: //RootNode
+    13700000: Plane002
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: CochonAnim
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 65
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
