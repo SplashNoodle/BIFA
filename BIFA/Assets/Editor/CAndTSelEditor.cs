@@ -9,6 +9,11 @@ public class CAndTSelEditor : Editor
 		serializedObject.Update();
 		CharAndTeeSelection s = (CharAndTeeSelection)target;
 
+		GUILayout.Label("Sounds", EditorStyles.boldLabel);
+		s.move = EditorGUILayout.ObjectField("Move Sound", s.move, typeof(AudioClip), true) as AudioClip;
+		s.select = EditorGUILayout.ObjectField("Select Sound", s.select, typeof(AudioClip), true) as AudioClip;
+		s.cancel = EditorGUILayout.ObjectField("Cancel Sound", s.cancel, typeof(AudioClip), true) as AudioClip;
+
 		GUILayout.Label("Character Infos", EditorStyles.boldLabel);
 		s.pInfos = EditorGUILayout.ObjectField("Player Infos", s.pInfos, typeof(PInfos), true) as PInfos;
 		s.mateInfos = EditorGUILayout.ObjectField("Mate Player Infos", s.mateInfos, typeof(PInfos), true) as PInfos; ;
@@ -23,6 +28,7 @@ public class CAndTSelEditor : Editor
 		s.ready = EditorGUILayout.ObjectField("Ready Icon", s.ready, typeof(GameObject), true) as GameObject;
 
 		GUILayout.Space(15);
+
 		EditorGUILayout.EnumPopup("Selection mode", s.SelMode);
 		/*s.canvasAnim = EditorGUILayout.ObjectField("Canvas Animator", s.canvasAnim, typeof(Animator), true) as Animator;*/
 
@@ -33,6 +39,7 @@ public class CAndTSelEditor : Editor
 		s.SetMaxReadyCount = EditorGUILayout.IntField("Max Ready Count", s.SetMaxReadyCount);
 
 		GUILayout.Space(15);
+
 		GUILayout.Label("Selected options", EditorStyles.boldLabel);
 		//EditorGUILayout.PropertyField(serializedObject.FindProperty("colors"), new GUIContent("Character"), true);
 		EditorGUILayout.PropertyField(serializedObject.FindProperty("charSprites"), new GUIContent("Character"), true);

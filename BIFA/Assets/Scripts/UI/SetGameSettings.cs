@@ -28,7 +28,7 @@ public class SetGameSettings : MonoBehaviour
 	#region Public Variables
 	public GameObject isEventActive, isObjectActive;
 
-	public GameObject[] colored = new GameObject[6],gameBall = new GameObject[3], tempFootBalls = new GameObject[3], tempBasketBalls = new GameObject[3], tempBowlingBalls = new GameObject[3];
+	public GameObject[] colored = new GameObject[6], gameBall = new GameObject[3], goldenBall = new GameObject[3], tempFootBalls = new GameObject[3], tempBasketBalls = new GameObject[3], tempBowlingBalls = new GameObject[3];
 
 	public RectTransform[] values = new RectTransform[10];
 
@@ -231,9 +231,9 @@ public class SetGameSettings : MonoBehaviour
 	void SetBallType() {
 
 		if (p.GetAxis("Ver") < 0)
-			_ballIndex--;
-		if (p.GetAxis("Ver") > 0)
 			_ballIndex++;
+		if (p.GetAxis("Ver") > 0)
+			_ballIndex--;
 
 		_ballIndex = (int)Mathf.Repeat(_ballIndex, 3f);
 
@@ -265,6 +265,7 @@ public class SetGameSettings : MonoBehaviour
 				gameBall[1].SetActive(false);
 				gameBall[2].SetActive(false);
 				EventMaster.eMInst.balls = tempFootBalls;
+				ReputationManager.repInst.goldenBall = goldenBall[0];
 				FindObjectOfType<BallIndicator>().ball = gameBall[0];
 				break;
 			case GameSettings.BallType.Basket:
@@ -272,6 +273,7 @@ public class SetGameSettings : MonoBehaviour
 				gameBall[1].SetActive(true);
 				gameBall[2].SetActive(false);
 				EventMaster.eMInst.balls = tempBasketBalls;
+				ReputationManager.repInst.goldenBall = goldenBall[1];
 				FindObjectOfType<BallIndicator>().ball = gameBall[1];
 				break;
 			case GameSettings.BallType.Bowling:
@@ -279,6 +281,7 @@ public class SetGameSettings : MonoBehaviour
 				gameBall[1].SetActive(false);
 				gameBall[2].SetActive(true);
 				EventMaster.eMInst.balls = tempBowlingBalls;
+				ReputationManager.repInst.goldenBall = goldenBall[2];
 				FindObjectOfType<BallIndicator>().ball = gameBall[2];
 				break;
 		}

@@ -76,7 +76,7 @@ public class Bonus : MonoBehaviour
     }
 
 	void GoldenBall() {
-
+		ReputationManager.repInst.goldenBall.SetActive(true);
 	}
     #endregion
 

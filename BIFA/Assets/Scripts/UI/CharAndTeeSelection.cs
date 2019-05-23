@@ -29,6 +29,8 @@ public class CharAndTeeSelection : MonoBehaviour
 
 	private Sprite _removedSprite;
 
+	private AudioSource _src;
+
 	private Player p;
 	#endregion
 
@@ -43,10 +45,11 @@ public class CharAndTeeSelection : MonoBehaviour
 
 	public Sprite[] charSprites, clothesSprites;
 
+	public AudioClip move, select, cancel;
+
 	public TextMeshProUGUI pseudoDisplay;
 
 	public PInfos pInfos, mateInfos;
-
 	public enum SelectionMode
 	{
 		Character,
@@ -64,6 +67,7 @@ public class CharAndTeeSelection : MonoBehaviour
 
 	#region Methods
 	void OnEnable() {
+		_src = GetComponent<AudioSource>();
 		if (pInfos.selectorIndex < 3)
 			InfoSelect(chars, 0, false);
 		else
@@ -135,6 +139,8 @@ public class CharAndTeeSelection : MonoBehaviour
 
 			//Si le joueur appuie sur le bouton Submit
 			if (p.GetButtonDown("Submit")) {
+				_src.clip = select;
+				_src.Play();
 				//On termine la sélection du personnage
 				_charSelDone = true;
 				//On désactive le bouton
@@ -156,6 +162,8 @@ public class CharAndTeeSelection : MonoBehaviour
 			}
 		}
 		else if (p.GetButtonDown("Cancel")) {
+			_src.clip = cancel;
+			_src.Play();
 			//On reprend la sélection
 			_charSelDone = false;
 			//On réactive le bouton
@@ -189,6 +197,8 @@ public class CharAndTeeSelection : MonoBehaviour
 
 			//Si le joueur appuie sur le bouton de retour
 			if (p.GetButtonDown("Cancel")) {
+				_src.clip = cancel;
+				_src.Play();
 				//On masque le drapeau
 				flag.SetActive(false);
 				//On repasse en mode sélection de personnage
@@ -199,6 +209,8 @@ public class CharAndTeeSelection : MonoBehaviour
 
 			//Si le joueur appuie sur le bouton Submit
 			if (p.GetButtonDown("Submit")) {
+				_src.clip = select;
+				_src.Play();
 				//On termine la sélection du personnage
 				_teeSelDone = true;
 				//On désactive le bouton
@@ -216,6 +228,8 @@ public class CharAndTeeSelection : MonoBehaviour
 			}
 		}
 		else if (p.GetButtonDown("Cancel")) {
+			_src.clip = cancel;
+			_src.Play();
 			_teeSelDone = false;
 			tenueImage.color = new Color(1f, 1f, 1f, 1f);
 			tenuesDispos[clothesSprites[_oldTIndex]] = true;
@@ -225,6 +239,9 @@ public class CharAndTeeSelection : MonoBehaviour
 	}
 
 	void InfoSelect(TransformArray[] array, float nextPrev, bool ver) {
+		if (_src.clip != move || _src.clip == null)
+			_src.clip = move;
+
 		array[_vInd].transforms[_hInd].GetChild(pInfos.selectorIndex).gameObject.SetActive(false);
 
 		if (ver) {
@@ -246,6 +263,8 @@ public class CharAndTeeSelection : MonoBehaviour
 
 			InfoSelect(array, nextPrev, ver);
 		}
+
+		_src.Play();
 
 		_infoIndex = _vInd * array[0].transforms.Length + _hInd;
 	}

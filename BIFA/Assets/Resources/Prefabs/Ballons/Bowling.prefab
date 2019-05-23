@@ -123,4 +123,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxDist: 100
   _spwnPt: {fileID: 0}
+  _spawnEffect: {fileID: 0}
+  defaultVolume: 0
+  kicks:
+  - {fileID: 8300000, guid: fb1b442fe48f99344806aec9885802d6, type: 3}
+  - {fileID: 8300000, guid: a024d841552414b40a6dcdc0337e5021, type: 3}
+  - {fileID: 8300000, guid: 51dbd90020b9a274cb063fe90424e795, type: 3}
+  - {fileID: 8300000, guid: 94902a489ab097f44977e5b55059724d, type: 3}
   bInfos: {fileID: 11400000, guid: 4ddaace8fd1c5864ea0e56bd8dbe7955, type: 2}
+  settings: {fileID: 11400000, guid: 04c68bdd454155f4db4ba8d65d1538a3, type: 2}

@@ -25,10 +25,14 @@ public class ReputationManager : MonoBehaviour
     [SerializeField] private GameObject[] _allBonus;
 
     private Stopwatch _bonusSpawnTimer = new Stopwatch();
-    #endregion
+	#endregion
 
-    #region Public Static Variables
-    public static ReputationManager repInst;
+	#region Public Variables
+	public GameObject goldenBall;
+	#endregion
+
+	#region Public Static Variables
+	public static ReputationManager repInst;
     #endregion
 
     #region Methods
@@ -133,6 +137,8 @@ public class ReputationManager : MonoBehaviour
     }
 
 	public void DisableObjects() {
+		if (goldenBall.activeInHierarchy)
+			goldenBall.SetActive(false);
 		enabled = false;
 	}
     #endregion

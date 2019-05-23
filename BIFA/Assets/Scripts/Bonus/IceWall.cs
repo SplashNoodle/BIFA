@@ -19,6 +19,7 @@ public class IceWall : MonoBehaviour
 	void Start() {
 		_lTimer.Start();
 		vapor.SetActive(true);
+		vapor.GetComponent<ParticleSystem>().Play();
 	}
 	void Update() {
 		_startFreeze = ReInput.players.GetPlayer(GetComponent<GamePlayer>().PlayerInfos.pIndex).GetButtonDown("AbButton2");
@@ -27,9 +28,11 @@ public class IceWall : MonoBehaviour
 			if (!_freezeTimer.IsRunning)
 				_freezeTimer.Start();
 			_lTimer.Reset();
+			vapor.SetActive(false);
 		}
 		else if (_lTimer.Elapsed.Seconds >= lifetime) {
 			_lTimer.Reset();
+			vapor.SetActive(false);
 			enabled = false;
 		}
 

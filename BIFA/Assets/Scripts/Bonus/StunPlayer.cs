@@ -19,6 +19,7 @@ public class StunPlayer : MonoBehaviour
 	void Start() {
 		_lTimer.Start();
 		circle.SetActive(true);
+		circle.GetComponent<ParticleSystem>().Play();
 	}
 
     void OnCollisionEnter(Collision col) {
@@ -30,6 +31,7 @@ public class StunPlayer : MonoBehaviour
             _otherPlayer.GetComponent<GamePlayer>().Stunned = true;
 			_otherPlayer.GetComponent<GamePlayer>().StunEffect.SetActive(true);
             _stunTimer.Start();
+			circle.SetActive(false);
         }
     }
 
@@ -47,6 +49,7 @@ public class StunPlayer : MonoBehaviour
 		else if (_lTimer.Elapsed.Seconds >= lifetime) {
 			_lTimer.Reset();
 			enabled = false;
+			circle.SetActive(false);
 		}
     }
 }

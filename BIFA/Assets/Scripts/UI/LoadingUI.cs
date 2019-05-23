@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class LoadingUI : MonoBehaviour
 {
 	float timeElapsed;
-	const float minTimeToShow = 5f;
+	const float minTimeToShow = 1f;
 
 	bool isLoading;
 

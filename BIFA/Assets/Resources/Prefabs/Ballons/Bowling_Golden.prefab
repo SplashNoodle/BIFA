@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bowling_Golden
       objectReference: {fileID: 0}
+    - target: {fileID: 1779096207336079916, guid: a6248c43a8a9810419661f12409a51f3,
+        type: 3}
+      propertyPath: m_TagString
+      value: GoldenBall
+      objectReference: {fileID: 0}
     - target: {fileID: 1779096207336185356, guid: a6248c43a8a9810419661f12409a51f3,
         type: 3}
       propertyPath: m_LocalPosition.x

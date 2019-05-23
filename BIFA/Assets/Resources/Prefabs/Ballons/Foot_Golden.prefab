@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Foot_Golden
       objectReference: {fileID: 0}
+    - target: {fileID: 6523445311119397306, guid: f0218eb8c8b6e8f4c832bdd87872588e,
+        type: 3}
+      propertyPath: m_TagString
+      value: GoldenBall
+      objectReference: {fileID: 0}
     - target: {fileID: 6523445311119166874, guid: f0218eb8c8b6e8f4c832bdd87872588e,
         type: 3}
       propertyPath: m_LocalPosition.x

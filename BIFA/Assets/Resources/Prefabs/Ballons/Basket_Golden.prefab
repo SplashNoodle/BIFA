@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Basket_Golden
       objectReference: {fileID: 0}
+    - target: {fileID: 2964604646378153001, guid: ef69d37352db7ba469a6e42130713596,
+        type: 3}
+      propertyPath: m_TagString
+      value: GoldenBall
+      objectReference: {fileID: 0}
     - target: {fileID: 2964604646377666569, guid: ef69d37352db7ba469a6e42130713596,
         type: 3}
       propertyPath: m_LocalPosition.x

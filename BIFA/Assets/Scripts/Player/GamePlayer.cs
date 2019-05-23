@@ -148,9 +148,7 @@ public class GamePlayer : MonoBehaviour
 		//On attribue _playerSpeed en fonction de _targetSpeed
 		_currentSpeed = Mathf.SmoothDamp(_currentSpeed, _targetSpeed, ref _wantedSpeed, .5f / _accel);
 		transform.Translate(Vector3.right * _currentSpeed * Time.fixedDeltaTime);
-
-
-
+			   
 		_rb.velocity = _rb.angularVelocity = Vector3.zero;
 	}
 
@@ -171,8 +169,9 @@ public class GamePlayer : MonoBehaviour
 			_bump = colSpeed != 0 ? (-(col.transform.position - transform.position) * _ejectForce * colSpeed) : (-(col.transform.position - transform.position) * _ejectForce * .1f);
 		}
 
-		if ((col.gameObject.CompareTag("Ballon") || col.gameObject.CompareTag("TempBallon")) && !isDashing) {
+		if ((col.gameObject.CompareTag("Ballon") || col.gameObject.CompareTag("TempBallon")) || col.gameObject.CompareTag("GoldenBall") && !isDashing) {
 			float str = _pStr * ((_currentSpeed / _maxSpeed) + .1f);
+			col.gameObject.GetComponent<Ballon>().PlayKick();
 			col.gameObject.GetComponent<Rigidbody>().velocity = (col.transform.position - transform.position) * str;
 		}
 
@@ -186,14 +185,14 @@ public class GamePlayer : MonoBehaviour
 
 	void OnTriggerEnter(Collider other) {
 		//On parente la balle au joueur
-		if (other.CompareTag("Ballon")) {
+		if (other.CompareTag("Ballon") || other.CompareTag("GoldenBall")) {
 			Grab(other);
 			_ball = other.gameObject;
 		}
 	}
 
 	void OnTriggerExit(Collider other) {
-		if (other.CompareTag("Ballon") || other.CompareTag("TempBallon")) {
+		if (other.CompareTag("Ballon") || other.CompareTag("GoldenBall")) {
 			if (_ball != null) {
 				if (_ball.transform.parent == this)
 					_ball.transform.parent = null;

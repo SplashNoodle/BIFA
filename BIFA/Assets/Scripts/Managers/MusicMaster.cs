@@ -14,8 +14,6 @@ public class MusicMaster : MonoBehaviour {
 
 	private bool showTitle = true;
 
-	private float volume = .5f;
-
 	private AudioSource source;
 	#endregion
 
@@ -25,12 +23,13 @@ public class MusicMaster : MonoBehaviour {
 	public AudioClip[] musics;
 
 	public TextMeshProUGUI title;
+
+	public GlobalSettings settings;
 	#endregion
 
 	#region Methods
 	private void Start() {
 		source = GetComponent<AudioSource>();
-		source.volume = volume;
 		index = Random.Range(0, musics.Length);
 		source.clip = musics[index];
 		source.Play();
@@ -39,6 +38,7 @@ public class MusicMaster : MonoBehaviour {
 	}
 
 	private void Update() {
+		source.volume = settings.masterVolume * settings.musicVolume;
 		title.text = titles[index];
 		if (showTitle) {
 			if (title.alpha < 0.99f)
