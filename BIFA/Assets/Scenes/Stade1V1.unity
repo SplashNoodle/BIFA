@@ -2312,6 +2312,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1201560276}
     m_Modifications:
+    - target: {fileID: 8944580628124282226, guid: fb927e851de41c844978884b7004a773,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8944580628124774738, guid: fb927e851de41c844978884b7004a773,
         type: 3}
       propertyPath: m_RootOrder
@@ -2336,11 +2341,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8944580628124282226, guid: fb927e851de41c844978884b7004a773,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6633929956609156047, guid: fb927e851de41c844978884b7004a773,
         type: 3}
@@ -2679,6 +2679,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 262947261}
     m_Modifications:
+    - target: {fileID: 1634979232003864747, guid: 156a20002dbb72942b4a7d548dc9c715,
+        type: 3}
+      propertyPath: m_Name
+      value: Tatane
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634979232003864747, guid: 156a20002dbb72942b4a7d548dc9c715,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1634979232003957899, guid: 156a20002dbb72942b4a7d548dc9c715,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2732,16 +2742,6 @@ PrefabInstance:
     - target: {fileID: 1634979232003957899, guid: 156a20002dbb72942b4a7d548dc9c715,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1634979232003864747, guid: 156a20002dbb72942b4a7d548dc9c715,
-        type: 3}
-      propertyPath: m_Name
-      value: Tatane
-      objectReference: {fileID: 0}
-    - target: {fileID: 1634979232003864747, guid: 156a20002dbb72942b4a7d548dc9c715,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7179818704167978205, guid: 156a20002dbb72942b4a7d548dc9c715,
@@ -3328,6 +3328,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 262947261}
     m_Modifications:
+    - target: {fileID: 8944580628124282226, guid: fb927e851de41c844978884b7004a773,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8944580628124774738, guid: fb927e851de41c844978884b7004a773,
         type: 3}
       propertyPath: m_RootOrder
@@ -3352,11 +3357,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8944580628124282226, guid: fb927e851de41c844978884b7004a773,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6633929956609156047, guid: fb927e851de41c844978884b7004a773,
         type: 3}
@@ -11647,6 +11647,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1201560276}
     m_Modifications:
+    - target: {fileID: 1634979232003864747, guid: 156a20002dbb72942b4a7d548dc9c715,
+        type: 3}
+      propertyPath: m_Name
+      value: Tatane
+      objectReference: {fileID: 0}
+    - target: {fileID: 1634979232003864747, guid: 156a20002dbb72942b4a7d548dc9c715,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1634979232003957899, guid: 156a20002dbb72942b4a7d548dc9c715,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11700,16 +11710,6 @@ PrefabInstance:
     - target: {fileID: 1634979232003957899, guid: 156a20002dbb72942b4a7d548dc9c715,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1634979232003864747, guid: 156a20002dbb72942b4a7d548dc9c715,
-        type: 3}
-      propertyPath: m_Name
-      value: Tatane
-      objectReference: {fileID: 0}
-    - target: {fileID: 1634979232003864747, guid: 156a20002dbb72942b4a7d548dc9c715,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7179818704167978205, guid: 156a20002dbb72942b4a7d548dc9c715,
