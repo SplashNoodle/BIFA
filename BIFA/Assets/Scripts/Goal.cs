@@ -59,7 +59,7 @@ public class Goal : MonoBehaviour
 				ScoreManager.scoreInst.UpdateDisplay(_equipTxt, ScoreManager.scoreInst.Score1);
                 ReputationManager.repInst.IncreaseRep(0, .1f);
             }
-            _ = col.CompareTag("Ballon")?StartCoroutine(col.GetComponent<Ballon>().Respawn(1f)):StartCoroutine(col.GetComponent<Ballon>().RespawnGolden());
+            _ = col.CompareTag("Ballon")?StartCoroutine(col.GetComponent<Ballon>().Respawn(0f)):StartCoroutine(col.GetComponent<Ballon>().RespawnGolden());
         }
 
         if(col.CompareTag("TempBallon"))

@@ -1,0 +1,1845 @@
+fileFormatVersion: 2
+guid: 817051ac8531edc4191e3a4f05f3751c
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Anul_01_L
+    100002: Anul_01_L 1
+    100004: Anul_01_L 2
+    100006: Anul_01_L 3
+    100008: Anul_01_L 4
+    100010: Anul_01_R
+    100012: Anul_01_R 1
+    100014: Anul_01_R 2
+    100016: Anul_01_R 3
+    100018: Anul_01_R 4
+    100020: Anul_02_L
+    100022: Anul_02_L 1
+    100024: Anul_02_L 2
+    100026: Anul_02_L 3
+    100028: Anul_02_L 4
+    100030: Anul_02_R
+    100032: Anul_02_R 1
+    100034: Anul_02_R 2
+    100036: Anul_02_R 3
+    100038: Anul_02_R 4
+    100040: Anul_03_L
+    100042: Anul_03_L 1
+    100044: Anul_03_L 2
+    100046: Anul_03_L 3
+    100048: Anul_03_L 4
+    100050: Anul_03_L_end
+    100052: Anul_03_L_end 1
+    100054: Anul_03_L_end 2
+    100056: Anul_03_L_end 3
+    100058: Anul_03_L_end 4
+    100060: Anul_03_R
+    100062: Anul_03_R 1
+    100064: Anul_03_R 2
+    100066: Anul_03_R 3
+    100068: Anul_03_R 4
+    100070: Anul_03_R_end
+    100072: Anul_03_R_end 1
+    100074: Anul_03_R_end 2
+    100076: Anul_03_R_end 3
+    100078: Anul_03_R_end 4
+    100080: Armature.002
+    100082: Armature.003
+    100084: Armature.004
+    100086: Armature_NewPerso
+    100088: Armature_Perso
+    100090: Auri_01_L
+    100092: Auri_01_L 1
+    100094: Auri_01_L 2
+    100096: Auri_01_L 3
+    100098: Auri_01_L 4
+    100100: Auri_01_R
+    100102: Auri_01_R 1
+    100104: Auri_01_R 2
+    100106: Auri_01_R 3
+    100108: Auri_01_R 4
+    100110: Auri_02_L
+    100112: Auri_02_L 1
+    100114: Auri_02_L 2
+    100116: Auri_02_L 3
+    100118: Auri_02_L 4
+    100120: Auri_02_R
+    100122: Auri_02_R 1
+    100124: Auri_02_R 2
+    100126: Auri_02_R 3
+    100128: Auri_02_R 4
+    100130: Auri_03_L
+    100132: Auri_03_L 1
+    100134: Auri_03_L 2
+    100136: Auri_03_L 3
+    100138: Auri_03_L 4
+    100140: Auri_03_L_end
+    100142: Auri_03_L_end 1
+    100144: Auri_03_L_end 2
+    100146: Auri_03_L_end 3
+    100148: Auri_03_L_end 4
+    100150: Auri_03_R
+    100152: Auri_03_R 1
+    100154: Auri_03_R 2
+    100156: Auri_03_R 3
+    100158: Auri_03_R 4
+    100160: Auri_03_R_end
+    100162: Auri_03_R_end 1
+    100164: Auri_03_R_end 2
+    100166: Auri_03_R_end 3
+    100168: Auri_03_R_end 4
+    100170: AvantBras_L
+    100172: AvantBras_L 1
+    100174: AvantBras_L 2
+    100176: AvantBras_L 3
+    100178: AvantBras_L 4
+    100180: AvantBras_L_end
+    100182: AvantBras_L_end 1
+    100184: AvantBras_L_end 2
+    100186: AvantBras_L_end 3
+    100188: AvantBras_L_end 4
+    100190: AvantBras_R
+    100192: AvantBras_R 1
+    100194: AvantBras_R 2
+    100196: AvantBras_R 3
+    100198: AvantBras_R 4
+    100200: AvantBras_R_end
+    100202: AvantBras_R_end 1
+    100204: AvantBras_R_end 2
+    100206: AvantBras_R_end 3
+    100208: AvantBras_R_end 4
+    100210: //RootNode
+    100212: Bone.001
+    100214: Bone.001 1
+    100216: Bone.001 2
+    100218: Bone.001 3
+    100220: Bone.001 4
+    100222: Bone.001_end
+    100224: Bone.001_end 1
+    100226: Bone.001_end 2
+    100228: Bone.001_end 3
+    100230: Bone.001_end 4
+    100232: Bone.002
+    100234: Bone.002 1
+    100236: Bone.002 2
+    100238: Bone.002 3
+    100240: Bone.002 4
+    100242: Bone.003
+    100244: Bone.003 1
+    100246: Bone.003 2
+    100248: Bone.003 3
+    100250: Bone.003 4
+    100252: Bone.004
+    100254: Bone.004 1
+    100256: Bone.004 2
+    100258: Bone.004 3
+    100260: Bone.004 4
+    100262: Bone.004_end
+    100264: Bone.004_end 1
+    100266: Bone.004_end 2
+    100268: Bone.004_end 3
+    100270: Bone.004_end 4
+    100272: Bone.005
+    100274: Bone.005 1
+    100276: Bone.005 2
+    100278: Bone.005 3
+    100280: Bone.005 4
+    100282: Bone.006
+    100284: Bone.006 1
+    100286: Bone.006 2
+    100288: Bone.006 3
+    100290: Bone.006 4
+    100292: Bone.009
+    100294: Bone.009 1
+    100296: Bone.009 2
+    100298: Bone.009 3
+    100300: Bone.009 4
+    100302: Bone.009_end
+    100304: Bone.009_end 1
+    100306: Bone.009_end 2
+    100308: Bone.009_end 3
+    100310: Bone.009_end 4
+    100312: Bras_L
+    100314: Bras_L 1
+    100316: Bras_L 2
+    100318: Bras_L 3
+    100320: Bras_L 4
+    100322: Bras_R
+    100324: Bras_R 1
+    100326: Bras_R 2
+    100328: Bras_R 3
+    100330: Bras_R 4
+    100332: Cage-Thoracique
+    100334: Cage-Thoracique 1
+    100336: Cage-Thoracique 2
+    100338: Cage-Thoracique 3
+    100340: Cage-Thoracique 4
+    100342: Clavicule_L
+    100344: Clavicule_L 1
+    100346: Clavicule_L 2
+    100348: Clavicule_L 3
+    100350: Clavicule_L 4
+    100352: Clavicule_R
+    100354: Clavicule_R 1
+    100356: Clavicule_R 2
+    100358: Clavicule_R 3
+    100360: Clavicule_R 4
+    100362: Corps.002
+    100364: Corps.004
+    100366: Cou
+    100368: Cou 1
+    100370: Cou 2
+    100372: Cou 3
+    100374: Cou 4
+    100376: Ctr_Anul_L
+    100378: Ctr_Anul_L 1
+    100380: Ctr_Anul_L 2
+    100382: Ctr_Anul_L 3
+    100384: Ctr_Anul_L 4
+    100386: Ctr_Anul_R
+    100388: Ctr_Anul_R 1
+    100390: Ctr_Anul_R 2
+    100392: Ctr_Anul_R 3
+    100394: Ctr_Anul_R 4
+    100396: Ctr_Anul_R_end
+    100398: Ctr_Anul_R_end 1
+    100400: Ctr_Anul_R_end 2
+    100402: Ctr_Anul_R_end 3
+    100404: Ctr_Anul_R_end 4
+    100406: Ctr_Arui_R
+    100408: Ctr_Arui_R 1
+    100410: Ctr_Arui_R 2
+    100412: Ctr_Arui_R 3
+    100414: Ctr_Arui_R 4
+    100416: Ctr_Arui_R_end
+    100418: Ctr_Arui_R_end 1
+    100420: Ctr_Arui_R_end 2
+    100422: Ctr_Arui_R_end 3
+    100424: Ctr_Arui_R_end 4
+    100426: Ctr_Index_L
+    100428: Ctr_Index_L 1
+    100430: Ctr_Index_L 2
+    100432: Ctr_Index_L 3
+    100434: Ctr_Index_L 4
+    100436: Ctr_Index_L_end
+    100438: Ctr_Index_L_end 1
+    100440: Ctr_Index_L_end 2
+    100442: Ctr_Index_L_end 3
+    100444: Ctr_Index_L_end 4
+    100446: Ctr_Maj_L
+    100448: Ctr_Maj_L 1
+    100450: Ctr_Maj_L 2
+    100452: Ctr_Maj_L 3
+    100454: Ctr_Maj_L 4
+    100456: Ctr_Maj_L_end
+    100458: Ctr_Maj_L_end 1
+    100460: Ctr_Maj_L_end 2
+    100462: Ctr_Maj_L_end 3
+    100464: Ctr_Maj_L_end 4
+    100466: Ctr_Pouce_R
+    100468: Ctr_Pouce_R 1
+    100470: Ctr_Pouce_R 2
+    100472: Ctr_Pouce_R 3
+    100474: Ctr_Pouce_R 4
+    100476: Ctr_Pouce_R_end
+    100478: Ctr_Pouce_R_end 1
+    100480: Ctr_Pouce_R_end 2
+    100482: Ctr_Pouce_R_end 3
+    100484: Ctr_Pouce_R_end 4
+    100486: Ctrl_Auri_L
+    100488: Ctrl_Auri_L 1
+    100490: Ctrl_Auri_L 2
+    100492: Ctrl_Auri_L 3
+    100494: Ctrl_Auri_L 4
+    100496: Ctrl_Hanches
+    100498: Ctrl_Hanches 1
+    100500: Ctrl_Hanches 2
+    100502: Ctrl_Hanches 3
+    100504: Ctrl_Hanches 4
+    100506: Ctrl_Index_R
+    100508: Ctrl_Index_R 1
+    100510: Ctrl_Index_R 2
+    100512: Ctrl_Index_R 3
+    100514: Ctrl_Index_R 4
+    100516: Ctrl_Index_R_end
+    100518: Ctrl_Index_R_end 1
+    100520: Ctrl_Index_R_end 2
+    100522: Ctrl_Index_R_end 3
+    100524: Ctrl_Index_R_end 4
+    100526: Ctrl_Pitch_Pied_L
+    100528: Ctrl_Pitch_Pied_L 1
+    100530: Ctrl_Pitch_Pied_L 2
+    100532: Ctrl_Pitch_Pied_L 3
+    100534: Ctrl_Pitch_Pied_L 4
+    100536: Ctrl_Pitch_Pied_L_end
+    100538: Ctrl_Pitch_Pied_L_end 1
+    100540: Ctrl_Pitch_Pied_L_end 2
+    100542: Ctrl_Pitch_Pied_L_end 3
+    100544: Ctrl_Pitch_Pied_L_end 4
+    100546: Ctrl_Pitch_Pied_R
+    100548: Ctrl_Pitch_Pied_R 1
+    100550: Ctrl_Pitch_Pied_R 2
+    100552: Ctrl_Pitch_Pied_R 3
+    100554: Ctrl_Pitch_Pied_R 4
+    100556: Ctrl_Pitch_Pied_R_end
+    100558: Ctrl_Pitch_Pied_R_end 1
+    100560: Ctrl_Pitch_Pied_R_end 2
+    100562: Ctrl_Pitch_Pied_R_end 3
+    100564: Ctrl_Pitch_Pied_R_end 4
+    100566: Ctrl_Pouce_L
+    100568: Ctrl_Pouce_L 1
+    100570: Ctrl_Pouce_L 2
+    100572: Ctrl_Pouce_L 3
+    100574: Ctrl_Pouce_L 4
+    100576: Ctrl_Pouce_L_end
+    100578: Ctrl_Pouce_L_end 1
+    100580: Ctrl_Pouce_L_end 2
+    100582: Ctrl_Pouce_L_end 3
+    100584: Ctrl_Pouce_L_end 4
+    100586: Ctrl_Toes_L
+    100588: Ctrl_Toes_L 1
+    100590: Ctrl_Toes_L 2
+    100592: Ctrl_Toes_L 3
+    100594: Ctrl_Toes_L 4
+    100596: Ctrl_Toes_R
+    100598: Ctrl_Toes_R 1
+    100600: Ctrl_Toes_R 2
+    100602: Ctrl_Toes_R 3
+    100604: Ctrl_Toes_R 4
+    100606: Ctrl_Torse
+    100608: Ctrl_Torse 1
+    100610: Ctrl_Torse 2
+    100612: Ctrl_Torse 3
+    100614: Ctrl_Torse 4
+    100616: Ctrl_Torse_end
+    100618: Ctrl_Torse_end 1
+    100620: Ctrl_Torse_end 2
+    100622: Ctrl_Torse_end 3
+    100624: Ctrl_Torse_end 4
+    100626: Cube
+    100628: Cube.006
+    100630: Cube.011
+    100632: Def_AvantBras_L
+    100634: Def_AvantBras_L 1
+    100636: Def_AvantBras_L 2
+    100638: Def_AvantBras_L 3
+    100640: Def_AvantBras_L 4
+    100642: Def_AvantBras_R
+    100644: Def_AvantBras_R 1
+    100646: Def_AvantBras_R 2
+    100648: Def_AvantBras_R 3
+    100650: Def_AvantBras_R 4
+    100652: Def_Bras_L
+    100654: Def_Bras_L 1
+    100656: Def_Bras_L 2
+    100658: Def_Bras_L 3
+    100660: Def_Bras_L 4
+    100662: Def_Bras_R
+    100664: Def_Bras_R 1
+    100666: Def_Bras_R 2
+    100668: Def_Bras_R 3
+    100670: Def_Bras_R 4
+    100672: Def_Cuisse_L
+    100674: Def_Cuisse_L 1
+    100676: Def_Cuisse_L 2
+    100678: Def_Cuisse_L 3
+    100680: Def_Cuisse_L 4
+    100682: Def_Cuisse_R
+    100684: Def_Cuisse_R 1
+    100686: Def_Cuisse_R 2
+    100688: Def_Cuisse_R 3
+    100690: Def_Cuisse_R 4
+    100692: Def_Main_L
+    100694: Def_Main_L 1
+    100696: Def_Main_L 2
+    100698: Def_Main_L 3
+    100700: Def_Main_L 4
+    100702: Def_Main_R
+    100704: Def_Main_R 1
+    100706: Def_Main_R 2
+    100708: Def_Main_R 3
+    100710: Def_Main_R 4
+    100712: Def_Pied_L
+    100714: Def_Pied_L 1
+    100716: Def_Pied_L 2
+    100718: Def_Pied_L 3
+    100720: Def_Pied_L 4
+    100722: Def_Pied_R
+    100724: Def_Pied_R 1
+    100726: Def_Pied_R 2
+    100728: Def_Pied_R 3
+    100730: Def_Pied_R 4
+    100732: Def_Tibia_L
+    100734: Def_Tibia_L 1
+    100736: Def_Tibia_L 2
+    100738: Def_Tibia_L 3
+    100740: Def_Tibia_L 4
+    100742: Def_Tibia_R
+    100744: Def_Tibia_R 1
+    100746: Def_Tibia_R 2
+    100748: Def_Tibia_R 3
+    100750: Def_Tibia_R 4
+    100752: Def_Toes_L
+    100754: Def_Toes_L 1
+    100756: Def_Toes_L 2
+    100758: Def_Toes_L 3
+    100760: Def_Toes_L 4
+    100762: Def_Toes_L_end
+    100764: Def_Toes_L_end 1
+    100766: Def_Toes_L_end 2
+    100768: Def_Toes_L_end 3
+    100770: Def_Toes_L_end 4
+    100772: Def_Toes_R
+    100774: Def_Toes_R 1
+    100776: Def_Toes_R 2
+    100778: Def_Toes_R 3
+    100780: Def_Toes_R 4
+    100782: Def_Toes_R_end
+    100784: Def_Toes_R_end 1
+    100786: Def_Toes_R_end 2
+    100788: Def_Toes_R_end 3
+    100790: Def_Toes_R_end 4
+    100792: Hanche_L
+    100794: Hanche_L 1
+    100796: Hanche_L 2
+    100798: Hanche_L 3
+    100800: Hanche_L 4
+    100802: Hanches
+    100804: Hanches 1
+    100806: Hanches 2
+    100808: Hanches 3
+    100810: Hanches 4
+    100812: Hanches_R
+    100814: Hanches_R 1
+    100816: Hanches_R 2
+    100818: Hanches_R 3
+    100820: Hanches_R 4
+    100822: Helper_IK_Pied_L
+    100824: Helper_IK_Pied_L 1
+    100826: Helper_IK_Pied_L 2
+    100828: Helper_IK_Pied_L 3
+    100830: Helper_IK_Pied_L 4
+    100832: Helper_IK_Pied_L_end
+    100834: Helper_IK_Pied_L_end 1
+    100836: Helper_IK_Pied_L_end 2
+    100838: Helper_IK_Pied_L_end 3
+    100840: Helper_IK_Pied_L_end 4
+    100842: Helper_IK_Pied_R
+    100844: Helper_IK_Pied_R 1
+    100846: Helper_IK_Pied_R 2
+    100848: Helper_IK_Pied_R 3
+    100850: Helper_IK_Pied_R 4
+    100852: Helper_IK_Pied_R_end
+    100854: Helper_IK_Pied_R_end 1
+    100856: Helper_IK_Pied_R_end 2
+    100858: Helper_IK_Pied_R_end 3
+    100860: Helper_IK_Pied_R_end 4
+    100862: Helper_Target_Pied
+    100864: Helper_Target_Pied 1
+    100866: Helper_Target_Pied 2
+    100868: Helper_Target_Pied 3
+    100870: Helper_Target_Pied 4
+    100872: Helper_Target_Pied_end
+    100874: Helper_Target_Pied_end 1
+    100876: Helper_Target_Pied_end 2
+    100878: Helper_Target_Pied_end 3
+    100880: Helper_Target_Pied_end 4
+    100882: IK_Cuisse_L
+    100884: IK_Cuisse_L 1
+    100886: IK_Cuisse_L 2
+    100888: IK_Cuisse_L 3
+    100890: IK_Cuisse_L 4
+    100892: IK_Cuisse_R
+    100894: IK_Cuisse_R 1
+    100896: IK_Cuisse_R 2
+    100898: IK_Cuisse_R 3
+    100900: IK_Cuisse_R 4
+    100902: IK_Main_L
+    100904: IK_Main_L 1
+    100906: IK_Main_L 2
+    100908: IK_Main_L 3
+    100910: IK_Main_L 4
+    100912: IK_Main_L_end
+    100914: IK_Main_L_end 1
+    100916: IK_Main_L_end 2
+    100918: IK_Main_L_end 3
+    100920: IK_Main_L_end 4
+    100922: IK_Main_R
+    100924: IK_Main_R 1
+    100926: IK_Main_R 2
+    100928: IK_Main_R 3
+    100930: IK_Main_R 4
+    100932: IK_Main_R_end
+    100934: IK_Main_R_end 1
+    100936: IK_Main_R_end 2
+    100938: IK_Main_R_end 3
+    100940: IK_Main_R_end 4
+    100942: IK_Tibia_L
+    100944: IK_Tibia_L 1
+    100946: IK_Tibia_L 2
+    100948: IK_Tibia_L 3
+    100950: IK_Tibia_L 4
+    100952: IK_Tibia_L.001
+    100954: IK_Tibia_L.001 1
+    100956: IK_Tibia_L.001 2
+    100958: IK_Tibia_L.001 3
+    100960: IK_Tibia_L.001 4
+    100962: IK_Tibia_L.001_end
+    100964: IK_Tibia_L.001_end 1
+    100966: IK_Tibia_L.001_end 2
+    100968: IK_Tibia_L.001_end 3
+    100970: IK_Tibia_L.001_end 4
+    100972: IK_Tibia_L.002
+    100974: IK_Tibia_L.002 1
+    100976: IK_Tibia_L.002 2
+    100978: IK_Tibia_L.002 3
+    100980: IK_Tibia_L.002 4
+    100982: IK_Tibia_L.002_end
+    100984: IK_Tibia_L.002_end 1
+    100986: IK_Tibia_L.002_end 2
+    100988: IK_Tibia_L.002_end 3
+    100990: IK_Tibia_L.002_end 4
+    100992: IK_Tibia_R
+    100994: IK_Tibia_R 1
+    100996: IK_Tibia_R 2
+    100998: IK_Tibia_R 3
+    101000: IK_Tibia_R 4
+    101002: Index_01_L
+    101004: Index_01_L 1
+    101006: Index_01_L 2
+    101008: Index_01_L 3
+    101010: Index_01_L 4
+    101012: Index_01_R
+    101014: Index_01_R 1
+    101016: Index_01_R 2
+    101018: Index_01_R 3
+    101020: Index_01_R 4
+    101022: Index_02_L
+    101024: Index_02_L 1
+    101026: Index_02_L 2
+    101028: Index_02_L 3
+    101030: Index_02_L 4
+    101032: Index_02_R
+    101034: Index_02_R 1
+    101036: Index_02_R 2
+    101038: Index_02_R 3
+    101040: Index_02_R 4
+    101042: Index_03_L
+    101044: Index_03_L 1
+    101046: Index_03_L 2
+    101048: Index_03_L 3
+    101050: Index_03_L 4
+    101052: Index_03_L_end
+    101054: Index_03_L_end 1
+    101056: Index_03_L_end 2
+    101058: Index_03_L_end 3
+    101060: Index_03_L_end 4
+    101062: Index_03_R
+    101064: Index_03_R 1
+    101066: Index_03_R 2
+    101068: Index_03_R 3
+    101070: Index_03_R 4
+    101072: Index_03_R_end
+    101074: Index_03_R_end 1
+    101076: Index_03_R_end 2
+    101078: Index_03_R_end 3
+    101080: Index_03_R_end 4
+    101082: Main_Ctrl_Doigts_L
+    101084: Main_Ctrl_Doigts_L 1
+    101086: Main_Ctrl_Doigts_L 2
+    101088: Main_Ctrl_Doigts_L 3
+    101090: Main_Ctrl_Doigts_L 4
+    101092: Main_Ctrl_Doigts_L_end
+    101094: Main_Ctrl_Doigts_L_end 1
+    101096: Main_Ctrl_Doigts_L_end 2
+    101098: Main_Ctrl_Doigts_L_end 3
+    101100: Main_Ctrl_Doigts_L_end 4
+    101102: Main_Ctrl_Doigts_R
+    101104: Main_Ctrl_Doigts_R 1
+    101106: Main_Ctrl_Doigts_R 2
+    101108: Main_Ctrl_Doigts_R 3
+    101110: Main_Ctrl_Doigts_R 4
+    101112: Main_Ctrl_Doigts_R_end
+    101114: Main_Ctrl_Doigts_R_end 1
+    101116: Main_Ctrl_Doigts_R_end 2
+    101118: Main_Ctrl_Doigts_R_end 3
+    101120: Main_Ctrl_Doigts_R_end 4
+    101122: Main_R.001
+    101124: Main_R.001 1
+    101126: Main_R.001 2
+    101128: Main_R.001 3
+    101130: Main_R.001 4
+    101132: Main_R.001_end
+    101134: Main_R.001_end 1
+    101136: Main_R.001_end 2
+    101138: Main_R.001_end 3
+    101140: Main_R.001_end 4
+    101142: Maj_01_L
+    101144: Maj_01_L 1
+    101146: Maj_01_L 2
+    101148: Maj_01_L 3
+    101150: Maj_01_L 4
+    101152: Maj_01_R
+    101154: Maj_01_R 1
+    101156: Maj_01_R 2
+    101158: Maj_01_R 3
+    101160: Maj_01_R 4
+    101162: Maj_02_L
+    101164: Maj_02_L 1
+    101166: Maj_02_L 2
+    101168: Maj_02_L 3
+    101170: Maj_02_L 4
+    101172: Maj_02_R
+    101174: Maj_02_R 1
+    101176: Maj_02_R 2
+    101178: Maj_02_R 3
+    101180: Maj_02_R 4
+    101182: Maj_03_L
+    101184: Maj_03_L 1
+    101186: Maj_03_L 2
+    101188: Maj_03_L 3
+    101190: Maj_03_L 4
+    101192: Maj_03_L_end
+    101194: Maj_03_L_end 1
+    101196: Maj_03_L_end 2
+    101198: Maj_03_L_end 3
+    101200: Maj_03_L_end 4
+    101202: Maj_03_R
+    101204: Maj_03_R 1
+    101206: Maj_03_R 2
+    101208: Maj_03_R 3
+    101210: Maj_03_R 4
+    101212: Maj_03_R_end
+    101214: Maj_03_R_end 1
+    101216: Maj_03_R_end 2
+    101218: Maj_03_R_end 3
+    101220: Maj_03_R_end 4
+    101222: MASTER_RIG
+    101224: MASTER_RIG 1
+    101226: Mech_Pied_L
+    101228: Mech_Pied_L 1
+    101230: Mech_Pied_L 2
+    101232: Mech_Pied_L 3
+    101234: Mech_Pied_L 4
+    101236: Mech_Pied_R
+    101238: Mech_Pied_R 1
+    101240: Mech_Pied_R 2
+    101242: Mech_Pied_R 3
+    101244: Mech_Pied_R 4
+    101246: Mech_Toes_L
+    101248: Mech_Toes_L 1
+    101250: Mech_Toes_L 2
+    101252: Mech_Toes_L 3
+    101254: Mech_Toes_L 4
+    101256: Mech_Toes_L_end
+    101258: Mech_Toes_L_end 1
+    101260: Mech_Toes_L_end 2
+    101262: Mech_Toes_L_end 3
+    101264: Mech_Toes_L_end 4
+    101266: Mech_Toes_R
+    101268: Mech_Toes_R 1
+    101270: Mech_Toes_R 2
+    101272: Mech_Toes_R 3
+    101274: Mech_Toes_R 4
+    101276: Mech_Toes_R_end
+    101278: Mech_Toes_R_end 1
+    101280: Mech_Toes_R_end 2
+    101282: Mech_Toes_R_end 3
+    101284: Mech_Toes_R_end 4
+    101286: Messi.001
+    101288: P_CageThoracique
+    101290: P_CageThoracique 1
+    101292: P_CageThoracique 2
+    101294: P_CageThoracique 3
+    101296: P_CageThoracique 4
+    101298: P_Hanches
+    101300: P_Hanches 1
+    101302: P_Hanches 2
+    101304: P_Hanches 3
+    101306: P_Hanches 4
+    101308: P_Torse
+    101310: P_Torse 1
+    101312: P_Torse 2
+    101314: P_Torse 3
+    101316: P_Torse 4
+    101318: P_Ventre
+    101320: P_Ventre 1
+    101322: P_Ventre 2
+    101324: P_Ventre 3
+    101326: P_Ventre 4
+    101328: Perso
+    101330: Plane.000
+    101332: Plane.001
+    101334: Plane.002
+    101336: Pointe_Pied_L
+    101338: Pointe_Pied_L 1
+    101340: Pointe_Pied_L 2
+    101342: Pointe_Pied_L 3
+    101344: Pointe_Pied_L 4
+    101346: Pointe_Pied_R
+    101348: Pointe_Pied_R 1
+    101350: Pointe_Pied_R 2
+    101352: Pointe_Pied_R 3
+    101354: Pointe_Pied_R 4
+    101356: Pouce_01_L
+    101358: Pouce_01_L 1
+    101360: Pouce_01_L 2
+    101362: Pouce_01_L 3
+    101364: Pouce_01_L 4
+    101366: Pouce_01_R
+    101368: Pouce_01_R 1
+    101370: Pouce_01_R 2
+    101372: Pouce_01_R 3
+    101374: Pouce_01_R 4
+    101376: Pouce_02_L
+    101378: Pouce_02_L 1
+    101380: Pouce_02_L 2
+    101382: Pouce_02_L 3
+    101384: Pouce_02_L 4
+    101386: Pouce_02_R
+    101388: Pouce_02_R 1
+    101390: Pouce_02_R 2
+    101392: Pouce_02_R 3
+    101394: Pouce_02_R 4
+    101396: Pouce_03_L
+    101398: Pouce_03_L 1
+    101400: Pouce_03_L 2
+    101402: Pouce_03_L 3
+    101404: Pouce_03_L 4
+    101406: Pouce_03_L_end
+    101408: Pouce_03_L_end 1
+    101410: Pouce_03_L_end 2
+    101412: Pouce_03_L_end 3
+    101414: Pouce_03_L_end 4
+    101416: Pouce_03_R
+    101418: Pouce_03_R 1
+    101420: Pouce_03_R 2
+    101422: Pouce_03_R 3
+    101424: Pouce_03_R 4
+    101426: Pouce_03_R_end
+    101428: Pouce_03_R_end 1
+    101430: Pouce_03_R_end 2
+    101432: Pouce_03_R_end 3
+    101434: Pouce_03_R_end 4
+    101436: Prt_Anul_L
+    101438: Prt_Anul_L 1
+    101440: Prt_Anul_L 2
+    101442: Prt_Anul_L 3
+    101444: Prt_Anul_L 4
+    101446: Prt_Anul_R
+    101448: Prt_Anul_R 1
+    101450: Prt_Anul_R 2
+    101452: Prt_Anul_R 3
+    101454: Prt_Anul_R 4
+    101456: Prt_Auri_L
+    101458: Prt_Auri_L 1
+    101460: Prt_Auri_L 2
+    101462: Prt_Auri_L 3
+    101464: Prt_Auri_L 4
+    101466: Prt_Auri_R
+    101468: Prt_Auri_R 1
+    101470: Prt_Auri_R 2
+    101472: Prt_Auri_R 3
+    101474: Prt_Auri_R 4
+    101476: Prt_index_L
+    101478: Prt_index_L 1
+    101480: Prt_index_L 2
+    101482: Prt_index_L 3
+    101484: Prt_index_L 4
+    101486: Prt_Index_R
+    101488: Prt_Index_R 1
+    101490: Prt_Index_R 2
+    101492: Prt_Index_R 3
+    101494: Prt_Index_R 4
+    101496: Switch_IK-FK_Bras_L
+    101498: Switch_IK-FK_Bras_L 1
+    101500: Switch_IK-FK_Bras_L 2
+    101502: Switch_IK-FK_Bras_L 3
+    101504: Switch_IK-FK_Bras_L 4
+    101506: Switch_IK-FK_Bras_L_end
+    101508: Switch_IK-FK_Bras_L_end 1
+    101510: Switch_IK-FK_Bras_L_end 2
+    101512: Switch_IK-FK_Bras_L_end 3
+    101514: Switch_IK-FK_Bras_L_end 4
+    101516: Switch_IK-FK_Bras_R
+    101518: Switch_IK-FK_Bras_R 1
+    101520: Switch_IK-FK_Bras_R 2
+    101522: Switch_IK-FK_Bras_R 3
+    101524: Switch_IK-FK_Bras_R 4
+    101526: Switch_IK-FK_Bras_R_end
+    101528: Switch_IK-FK_Bras_R_end 1
+    101530: Switch_IK-FK_Bras_R_end 2
+    101532: Switch_IK-FK_Bras_R_end 3
+    101534: Switch_IK-FK_Bras_R_end 4
+    101536: Switch_Ik-Fk_Jambe_L
+    101538: Switch_Ik-Fk_Jambe_L 1
+    101540: Switch_Ik-Fk_Jambe_L 2
+    101542: Switch_Ik-Fk_Jambe_L 3
+    101544: Switch_Ik-Fk_Jambe_L 4
+    101546: Switch_Ik-Fk_Jambe_L_end
+    101548: Switch_Ik-Fk_Jambe_L_end 1
+    101550: Switch_Ik-Fk_Jambe_L_end 2
+    101552: Switch_Ik-Fk_Jambe_L_end 3
+    101554: Switch_Ik-Fk_Jambe_L_end 4
+    101556: Switch_Ik-Fk_Jambe_R
+    101558: Switch_Ik-Fk_Jambe_R 1
+    101560: Switch_Ik-Fk_Jambe_R 2
+    101562: Switch_Ik-Fk_Jambe_R 3
+    101564: Switch_Ik-Fk_Jambe_R 4
+    101566: Switch_Ik-Fk_Jambe_R_end
+    101568: Switch_Ik-Fk_Jambe_R_end 1
+    101570: Switch_Ik-Fk_Jambe_R_end 2
+    101572: Switch_Ik-Fk_Jambe_R_end 3
+    101574: Switch_Ik-Fk_Jambe_R_end 4
+    101576: T_shirt.001
+    101578: Talon_Pied_L
+    101580: Talon_Pied_L 1
+    101582: Talon_Pied_L 2
+    101584: Talon_Pied_L 3
+    101586: Talon_Pied_L 4
+    101588: Talon_Pied_R
+    101590: Talon_Pied_R 1
+    101592: Talon_Pied_R 2
+    101594: Talon_Pied_R 3
+    101596: Talon_Pied_R 4
+    101598: Target_Coude_L
+    101600: Target_Coude_L 1
+    101602: Target_Coude_L 2
+    101604: Target_Coude_L 3
+    101606: Target_Coude_L 4
+    101608: Target_Coude_R
+    101610: Target_Coude_R 1
+    101612: Target_Coude_R 2
+    101614: Target_Coude_R 3
+    101616: Target_Coude_R 4
+    101618: Target_IK_Genou_L
+    101620: Target_IK_Genou_L 1
+    101622: Target_IK_Genou_L 2
+    101624: Target_IK_Genou_L 3
+    101626: Target_IK_Genou_L 4
+    101628: Target_IK_Genou_L_end
+    101630: Target_IK_Genou_L_end 1
+    101632: Target_IK_Genou_L_end 2
+    101634: Target_IK_Genou_L_end 3
+    101636: Target_IK_Genou_L_end 4
+    101638: Target_IK_Genou_R
+    101640: Target_IK_Genou_R 1
+    101642: Target_IK_Genou_R 2
+    101644: Target_IK_Genou_R 3
+    101646: Target_IK_Genou_R 4
+    101648: Target_IK_Genou_R_end
+    101650: Target_IK_Genou_R_end 1
+    101652: Target_IK_Genou_R_end 2
+    101654: Target_IK_Genou_R_end 3
+    101656: Target_IK_Genou_R_end 4
+    101658: Tete
+    101660: Tete 1
+    101662: Tete 2
+    101664: Tete 3
+    101666: Tete 4
+    101668: Tete_end
+    101670: Tete_end 1
+    101672: Tete_end 2
+    101674: Tete_end 3
+    101676: Tete_end 4
+    101678: TeteZlatan
+    101680: Torse
+    101682: Torse 1
+    101684: Torse 2
+    101686: Torse 3
+    101688: Torse 4
+    101690: Ventre
+    101692: Ventre 1
+    101694: Ventre 2
+    101696: Ventre 3
+    101698: Ventre 4
+    400000: Anul_01_L
+    400002: Anul_01_L 1
+    400004: Anul_01_L 2
+    400006: Anul_01_L 3
+    400008: Anul_01_L 4
+    400010: Anul_01_R
+    400012: Anul_01_R 1
+    400014: Anul_01_R 2
+    400016: Anul_01_R 3
+    400018: Anul_01_R 4
+    400020: Anul_02_L
+    400022: Anul_02_L 1
+    400024: Anul_02_L 2
+    400026: Anul_02_L 3
+    400028: Anul_02_L 4
+    400030: Anul_02_R
+    400032: Anul_02_R 1
+    400034: Anul_02_R 2
+    400036: Anul_02_R 3
+    400038: Anul_02_R 4
+    400040: Anul_03_L
+    400042: Anul_03_L 1
+    400044: Anul_03_L 2
+    400046: Anul_03_L 3
+    400048: Anul_03_L 4
+    400050: Anul_03_L_end
+    400052: Anul_03_L_end 1
+    400054: Anul_03_L_end 2
+    400056: Anul_03_L_end 3
+    400058: Anul_03_L_end 4
+    400060: Anul_03_R
+    400062: Anul_03_R 1
+    400064: Anul_03_R 2
+    400066: Anul_03_R 3
+    400068: Anul_03_R 4
+    400070: Anul_03_R_end
+    400072: Anul_03_R_end 1
+    400074: Anul_03_R_end 2
+    400076: Anul_03_R_end 3
+    400078: Anul_03_R_end 4
+    400080: Armature.002
+    400082: Armature.003
+    400084: Armature.004
+    400086: Armature_NewPerso
+    400088: Armature_Perso
+    400090: Auri_01_L
+    400092: Auri_01_L 1
+    400094: Auri_01_L 2
+    400096: Auri_01_L 3
+    400098: Auri_01_L 4
+    400100: Auri_01_R
+    400102: Auri_01_R 1
+    400104: Auri_01_R 2
+    400106: Auri_01_R 3
+    400108: Auri_01_R 4
+    400110: Auri_02_L
+    400112: Auri_02_L 1
+    400114: Auri_02_L 2
+    400116: Auri_02_L 3
+    400118: Auri_02_L 4
+    400120: Auri_02_R
+    400122: Auri_02_R 1
+    400124: Auri_02_R 2
+    400126: Auri_02_R 3
+    400128: Auri_02_R 4
+    400130: Auri_03_L
+    400132: Auri_03_L 1
+    400134: Auri_03_L 2
+    400136: Auri_03_L 3
+    400138: Auri_03_L 4
+    400140: Auri_03_L_end
+    400142: Auri_03_L_end 1
+    400144: Auri_03_L_end 2
+    400146: Auri_03_L_end 3
+    400148: Auri_03_L_end 4
+    400150: Auri_03_R
+    400152: Auri_03_R 1
+    400154: Auri_03_R 2
+    400156: Auri_03_R 3
+    400158: Auri_03_R 4
+    400160: Auri_03_R_end
+    400162: Auri_03_R_end 1
+    400164: Auri_03_R_end 2
+    400166: Auri_03_R_end 3
+    400168: Auri_03_R_end 4
+    400170: AvantBras_L
+    400172: AvantBras_L 1
+    400174: AvantBras_L 2
+    400176: AvantBras_L 3
+    400178: AvantBras_L 4
+    400180: AvantBras_L_end
+    400182: AvantBras_L_end 1
+    400184: AvantBras_L_end 2
+    400186: AvantBras_L_end 3
+    400188: AvantBras_L_end 4
+    400190: AvantBras_R
+    400192: AvantBras_R 1
+    400194: AvantBras_R 2
+    400196: AvantBras_R 3
+    400198: AvantBras_R 4
+    400200: AvantBras_R_end
+    400202: AvantBras_R_end 1
+    400204: AvantBras_R_end 2
+    400206: AvantBras_R_end 3
+    400208: AvantBras_R_end 4
+    400210: //RootNode
+    400212: Bone.001
+    400214: Bone.001 1
+    400216: Bone.001 2
+    400218: Bone.001 3
+    400220: Bone.001 4
+    400222: Bone.001_end
+    400224: Bone.001_end 1
+    400226: Bone.001_end 2
+    400228: Bone.001_end 3
+    400230: Bone.001_end 4
+    400232: Bone.002
+    400234: Bone.002 1
+    400236: Bone.002 2
+    400238: Bone.002 3
+    400240: Bone.002 4
+    400242: Bone.003
+    400244: Bone.003 1
+    400246: Bone.003 2
+    400248: Bone.003 3
+    400250: Bone.003 4
+    400252: Bone.004
+    400254: Bone.004 1
+    400256: Bone.004 2
+    400258: Bone.004 3
+    400260: Bone.004 4
+    400262: Bone.004_end
+    400264: Bone.004_end 1
+    400266: Bone.004_end 2
+    400268: Bone.004_end 3
+    400270: Bone.004_end 4
+    400272: Bone.005
+    400274: Bone.005 1
+    400276: Bone.005 2
+    400278: Bone.005 3
+    400280: Bone.005 4
+    400282: Bone.006
+    400284: Bone.006 1
+    400286: Bone.006 2
+    400288: Bone.006 3
+    400290: Bone.006 4
+    400292: Bone.009
+    400294: Bone.009 1
+    400296: Bone.009 2
+    400298: Bone.009 3
+    400300: Bone.009 4
+    400302: Bone.009_end
+    400304: Bone.009_end 1
+    400306: Bone.009_end 2
+    400308: Bone.009_end 3
+    400310: Bone.009_end 4
+    400312: Bras_L
+    400314: Bras_L 1
+    400316: Bras_L 2
+    400318: Bras_L 3
+    400320: Bras_L 4
+    400322: Bras_R
+    400324: Bras_R 1
+    400326: Bras_R 2
+    400328: Bras_R 3
+    400330: Bras_R 4
+    400332: Cage-Thoracique
+    400334: Cage-Thoracique 1
+    400336: Cage-Thoracique 2
+    400338: Cage-Thoracique 3
+    400340: Cage-Thoracique 4
+    400342: Clavicule_L
+    400344: Clavicule_L 1
+    400346: Clavicule_L 2
+    400348: Clavicule_L 3
+    400350: Clavicule_L 4
+    400352: Clavicule_R
+    400354: Clavicule_R 1
+    400356: Clavicule_R 2
+    400358: Clavicule_R 3
+    400360: Clavicule_R 4
+    400362: Corps.002
+    400364: Corps.004
+    400366: Cou
+    400368: Cou 1
+    400370: Cou 2
+    400372: Cou 3
+    400374: Cou 4
+    400376: Ctr_Anul_L
+    400378: Ctr_Anul_L 1
+    400380: Ctr_Anul_L 2
+    400382: Ctr_Anul_L 3
+    400384: Ctr_Anul_L 4
+    400386: Ctr_Anul_R
+    400388: Ctr_Anul_R 1
+    400390: Ctr_Anul_R 2
+    400392: Ctr_Anul_R 3
+    400394: Ctr_Anul_R 4
+    400396: Ctr_Anul_R_end
+    400398: Ctr_Anul_R_end 1
+    400400: Ctr_Anul_R_end 2
+    400402: Ctr_Anul_R_end 3
+    400404: Ctr_Anul_R_end 4
+    400406: Ctr_Arui_R
+    400408: Ctr_Arui_R 1
+    400410: Ctr_Arui_R 2
+    400412: Ctr_Arui_R 3
+    400414: Ctr_Arui_R 4
+    400416: Ctr_Arui_R_end
+    400418: Ctr_Arui_R_end 1
+    400420: Ctr_Arui_R_end 2
+    400422: Ctr_Arui_R_end 3
+    400424: Ctr_Arui_R_end 4
+    400426: Ctr_Index_L
+    400428: Ctr_Index_L 1
+    400430: Ctr_Index_L 2
+    400432: Ctr_Index_L 3
+    400434: Ctr_Index_L 4
+    400436: Ctr_Index_L_end
+    400438: Ctr_Index_L_end 1
+    400440: Ctr_Index_L_end 2
+    400442: Ctr_Index_L_end 3
+    400444: Ctr_Index_L_end 4
+    400446: Ctr_Maj_L
+    400448: Ctr_Maj_L 1
+    400450: Ctr_Maj_L 2
+    400452: Ctr_Maj_L 3
+    400454: Ctr_Maj_L 4
+    400456: Ctr_Maj_L_end
+    400458: Ctr_Maj_L_end 1
+    400460: Ctr_Maj_L_end 2
+    400462: Ctr_Maj_L_end 3
+    400464: Ctr_Maj_L_end 4
+    400466: Ctr_Pouce_R
+    400468: Ctr_Pouce_R 1
+    400470: Ctr_Pouce_R 2
+    400472: Ctr_Pouce_R 3
+    400474: Ctr_Pouce_R 4
+    400476: Ctr_Pouce_R_end
+    400478: Ctr_Pouce_R_end 1
+    400480: Ctr_Pouce_R_end 2
+    400482: Ctr_Pouce_R_end 3
+    400484: Ctr_Pouce_R_end 4
+    400486: Ctrl_Auri_L
+    400488: Ctrl_Auri_L 1
+    400490: Ctrl_Auri_L 2
+    400492: Ctrl_Auri_L 3
+    400494: Ctrl_Auri_L 4
+    400496: Ctrl_Hanches
+    400498: Ctrl_Hanches 1
+    400500: Ctrl_Hanches 2
+    400502: Ctrl_Hanches 3
+    400504: Ctrl_Hanches 4
+    400506: Ctrl_Index_R
+    400508: Ctrl_Index_R 1
+    400510: Ctrl_Index_R 2
+    400512: Ctrl_Index_R 3
+    400514: Ctrl_Index_R 4
+    400516: Ctrl_Index_R_end
+    400518: Ctrl_Index_R_end 1
+    400520: Ctrl_Index_R_end 2
+    400522: Ctrl_Index_R_end 3
+    400524: Ctrl_Index_R_end 4
+    400526: Ctrl_Pitch_Pied_L
+    400528: Ctrl_Pitch_Pied_L 1
+    400530: Ctrl_Pitch_Pied_L 2
+    400532: Ctrl_Pitch_Pied_L 3
+    400534: Ctrl_Pitch_Pied_L 4
+    400536: Ctrl_Pitch_Pied_L_end
+    400538: Ctrl_Pitch_Pied_L_end 1
+    400540: Ctrl_Pitch_Pied_L_end 2
+    400542: Ctrl_Pitch_Pied_L_end 3
+    400544: Ctrl_Pitch_Pied_L_end 4
+    400546: Ctrl_Pitch_Pied_R
+    400548: Ctrl_Pitch_Pied_R 1
+    400550: Ctrl_Pitch_Pied_R 2
+    400552: Ctrl_Pitch_Pied_R 3
+    400554: Ctrl_Pitch_Pied_R 4
+    400556: Ctrl_Pitch_Pied_R_end
+    400558: Ctrl_Pitch_Pied_R_end 1
+    400560: Ctrl_Pitch_Pied_R_end 2
+    400562: Ctrl_Pitch_Pied_R_end 3
+    400564: Ctrl_Pitch_Pied_R_end 4
+    400566: Ctrl_Pouce_L
+    400568: Ctrl_Pouce_L 1
+    400570: Ctrl_Pouce_L 2
+    400572: Ctrl_Pouce_L 3
+    400574: Ctrl_Pouce_L 4
+    400576: Ctrl_Pouce_L_end
+    400578: Ctrl_Pouce_L_end 1
+    400580: Ctrl_Pouce_L_end 2
+    400582: Ctrl_Pouce_L_end 3
+    400584: Ctrl_Pouce_L_end 4
+    400586: Ctrl_Toes_L
+    400588: Ctrl_Toes_L 1
+    400590: Ctrl_Toes_L 2
+    400592: Ctrl_Toes_L 3
+    400594: Ctrl_Toes_L 4
+    400596: Ctrl_Toes_R
+    400598: Ctrl_Toes_R 1
+    400600: Ctrl_Toes_R 2
+    400602: Ctrl_Toes_R 3
+    400604: Ctrl_Toes_R 4
+    400606: Ctrl_Torse
+    400608: Ctrl_Torse 1
+    400610: Ctrl_Torse 2
+    400612: Ctrl_Torse 3
+    400614: Ctrl_Torse 4
+    400616: Ctrl_Torse_end
+    400618: Ctrl_Torse_end 1
+    400620: Ctrl_Torse_end 2
+    400622: Ctrl_Torse_end 3
+    400624: Ctrl_Torse_end 4
+    400626: Cube
+    400628: Cube.006
+    400630: Cube.011
+    400632: Def_AvantBras_L
+    400634: Def_AvantBras_L 1
+    400636: Def_AvantBras_L 2
+    400638: Def_AvantBras_L 3
+    400640: Def_AvantBras_L 4
+    400642: Def_AvantBras_R
+    400644: Def_AvantBras_R 1
+    400646: Def_AvantBras_R 2
+    400648: Def_AvantBras_R 3
+    400650: Def_AvantBras_R 4
+    400652: Def_Bras_L
+    400654: Def_Bras_L 1
+    400656: Def_Bras_L 2
+    400658: Def_Bras_L 3
+    400660: Def_Bras_L 4
+    400662: Def_Bras_R
+    400664: Def_Bras_R 1
+    400666: Def_Bras_R 2
+    400668: Def_Bras_R 3
+    400670: Def_Bras_R 4
+    400672: Def_Cuisse_L
+    400674: Def_Cuisse_L 1
+    400676: Def_Cuisse_L 2
+    400678: Def_Cuisse_L 3
+    400680: Def_Cuisse_L 4
+    400682: Def_Cuisse_R
+    400684: Def_Cuisse_R 1
+    400686: Def_Cuisse_R 2
+    400688: Def_Cuisse_R 3
+    400690: Def_Cuisse_R 4
+    400692: Def_Main_L
+    400694: Def_Main_L 1
+    400696: Def_Main_L 2
+    400698: Def_Main_L 3
+    400700: Def_Main_L 4
+    400702: Def_Main_R
+    400704: Def_Main_R 1
+    400706: Def_Main_R 2
+    400708: Def_Main_R 3
+    400710: Def_Main_R 4
+    400712: Def_Pied_L
+    400714: Def_Pied_L 1
+    400716: Def_Pied_L 2
+    400718: Def_Pied_L 3
+    400720: Def_Pied_L 4
+    400722: Def_Pied_R
+    400724: Def_Pied_R 1
+    400726: Def_Pied_R 2
+    400728: Def_Pied_R 3
+    400730: Def_Pied_R 4
+    400732: Def_Tibia_L
+    400734: Def_Tibia_L 1
+    400736: Def_Tibia_L 2
+    400738: Def_Tibia_L 3
+    400740: Def_Tibia_L 4
+    400742: Def_Tibia_R
+    400744: Def_Tibia_R 1
+    400746: Def_Tibia_R 2
+    400748: Def_Tibia_R 3
+    400750: Def_Tibia_R 4
+    400752: Def_Toes_L
+    400754: Def_Toes_L 1
+    400756: Def_Toes_L 2
+    400758: Def_Toes_L 3
+    400760: Def_Toes_L 4
+    400762: Def_Toes_L_end
+    400764: Def_Toes_L_end 1
+    400766: Def_Toes_L_end 2
+    400768: Def_Toes_L_end 3
+    400770: Def_Toes_L_end 4
+    400772: Def_Toes_R
+    400774: Def_Toes_R 1
+    400776: Def_Toes_R 2
+    400778: Def_Toes_R 3
+    400780: Def_Toes_R 4
+    400782: Def_Toes_R_end
+    400784: Def_Toes_R_end 1
+    400786: Def_Toes_R_end 2
+    400788: Def_Toes_R_end 3
+    400790: Def_Toes_R_end 4
+    400792: Hanche_L
+    400794: Hanche_L 1
+    400796: Hanche_L 2
+    400798: Hanche_L 3
+    400800: Hanche_L 4
+    400802: Hanches
+    400804: Hanches 1
+    400806: Hanches 2
+    400808: Hanches 3
+    400810: Hanches 4
+    400812: Hanches_R
+    400814: Hanches_R 1
+    400816: Hanches_R 2
+    400818: Hanches_R 3
+    400820: Hanches_R 4
+    400822: Helper_IK_Pied_L
+    400824: Helper_IK_Pied_L 1
+    400826: Helper_IK_Pied_L 2
+    400828: Helper_IK_Pied_L 3
+    400830: Helper_IK_Pied_L 4
+    400832: Helper_IK_Pied_L_end
+    400834: Helper_IK_Pied_L_end 1
+    400836: Helper_IK_Pied_L_end 2
+    400838: Helper_IK_Pied_L_end 3
+    400840: Helper_IK_Pied_L_end 4
+    400842: Helper_IK_Pied_R
+    400844: Helper_IK_Pied_R 1
+    400846: Helper_IK_Pied_R 2
+    400848: Helper_IK_Pied_R 3
+    400850: Helper_IK_Pied_R 4
+    400852: Helper_IK_Pied_R_end
+    400854: Helper_IK_Pied_R_end 1
+    400856: Helper_IK_Pied_R_end 2
+    400858: Helper_IK_Pied_R_end 3
+    400860: Helper_IK_Pied_R_end 4
+    400862: Helper_Target_Pied
+    400864: Helper_Target_Pied 1
+    400866: Helper_Target_Pied 2
+    400868: Helper_Target_Pied 3
+    400870: Helper_Target_Pied 4
+    400872: Helper_Target_Pied_end
+    400874: Helper_Target_Pied_end 1
+    400876: Helper_Target_Pied_end 2
+    400878: Helper_Target_Pied_end 3
+    400880: Helper_Target_Pied_end 4
+    400882: IK_Cuisse_L
+    400884: IK_Cuisse_L 1
+    400886: IK_Cuisse_L 2
+    400888: IK_Cuisse_L 3
+    400890: IK_Cuisse_L 4
+    400892: IK_Cuisse_R
+    400894: IK_Cuisse_R 1
+    400896: IK_Cuisse_R 2
+    400898: IK_Cuisse_R 3
+    400900: IK_Cuisse_R 4
+    400902: IK_Main_L
+    400904: IK_Main_L 1
+    400906: IK_Main_L 2
+    400908: IK_Main_L 3
+    400910: IK_Main_L 4
+    400912: IK_Main_L_end
+    400914: IK_Main_L_end 1
+    400916: IK_Main_L_end 2
+    400918: IK_Main_L_end 3
+    400920: IK_Main_L_end 4
+    400922: IK_Main_R
+    400924: IK_Main_R 1
+    400926: IK_Main_R 2
+    400928: IK_Main_R 3
+    400930: IK_Main_R 4
+    400932: IK_Main_R_end
+    400934: IK_Main_R_end 1
+    400936: IK_Main_R_end 2
+    400938: IK_Main_R_end 3
+    400940: IK_Main_R_end 4
+    400942: IK_Tibia_L
+    400944: IK_Tibia_L 1
+    400946: IK_Tibia_L 2
+    400948: IK_Tibia_L 3
+    400950: IK_Tibia_L 4
+    400952: IK_Tibia_L.001
+    400954: IK_Tibia_L.001 1
+    400956: IK_Tibia_L.001 2
+    400958: IK_Tibia_L.001 3
+    400960: IK_Tibia_L.001 4
+    400962: IK_Tibia_L.001_end
+    400964: IK_Tibia_L.001_end 1
+    400966: IK_Tibia_L.001_end 2
+    400968: IK_Tibia_L.001_end 3
+    400970: IK_Tibia_L.001_end 4
+    400972: IK_Tibia_L.002
+    400974: IK_Tibia_L.002 1
+    400976: IK_Tibia_L.002 2
+    400978: IK_Tibia_L.002 3
+    400980: IK_Tibia_L.002 4
+    400982: IK_Tibia_L.002_end
+    400984: IK_Tibia_L.002_end 1
+    400986: IK_Tibia_L.002_end 2
+    400988: IK_Tibia_L.002_end 3
+    400990: IK_Tibia_L.002_end 4
+    400992: IK_Tibia_R
+    400994: IK_Tibia_R 1
+    400996: IK_Tibia_R 2
+    400998: IK_Tibia_R 3
+    401000: IK_Tibia_R 4
+    401002: Index_01_L
+    401004: Index_01_L 1
+    401006: Index_01_L 2
+    401008: Index_01_L 3
+    401010: Index_01_L 4
+    401012: Index_01_R
+    401014: Index_01_R 1
+    401016: Index_01_R 2
+    401018: Index_01_R 3
+    401020: Index_01_R 4
+    401022: Index_02_L
+    401024: Index_02_L 1
+    401026: Index_02_L 2
+    401028: Index_02_L 3
+    401030: Index_02_L 4
+    401032: Index_02_R
+    401034: Index_02_R 1
+    401036: Index_02_R 2
+    401038: Index_02_R 3
+    401040: Index_02_R 4
+    401042: Index_03_L
+    401044: Index_03_L 1
+    401046: Index_03_L 2
+    401048: Index_03_L 3
+    401050: Index_03_L 4
+    401052: Index_03_L_end
+    401054: Index_03_L_end 1
+    401056: Index_03_L_end 2
+    401058: Index_03_L_end 3
+    401060: Index_03_L_end 4
+    401062: Index_03_R
+    401064: Index_03_R 1
+    401066: Index_03_R 2
+    401068: Index_03_R 3
+    401070: Index_03_R 4
+    401072: Index_03_R_end
+    401074: Index_03_R_end 1
+    401076: Index_03_R_end 2
+    401078: Index_03_R_end 3
+    401080: Index_03_R_end 4
+    401082: Main_Ctrl_Doigts_L
+    401084: Main_Ctrl_Doigts_L 1
+    401086: Main_Ctrl_Doigts_L 2
+    401088: Main_Ctrl_Doigts_L 3
+    401090: Main_Ctrl_Doigts_L 4
+    401092: Main_Ctrl_Doigts_L_end
+    401094: Main_Ctrl_Doigts_L_end 1
+    401096: Main_Ctrl_Doigts_L_end 2
+    401098: Main_Ctrl_Doigts_L_end 3
+    401100: Main_Ctrl_Doigts_L_end 4
+    401102: Main_Ctrl_Doigts_R
+    401104: Main_Ctrl_Doigts_R 1
+    401106: Main_Ctrl_Doigts_R 2
+    401108: Main_Ctrl_Doigts_R 3
+    401110: Main_Ctrl_Doigts_R 4
+    401112: Main_Ctrl_Doigts_R_end
+    401114: Main_Ctrl_Doigts_R_end 1
+    401116: Main_Ctrl_Doigts_R_end 2
+    401118: Main_Ctrl_Doigts_R_end 3
+    401120: Main_Ctrl_Doigts_R_end 4
+    401122: Main_R.001
+    401124: Main_R.001 1
+    401126: Main_R.001 2
+    401128: Main_R.001 3
+    401130: Main_R.001 4
+    401132: Main_R.001_end
+    401134: Main_R.001_end 1
+    401136: Main_R.001_end 2
+    401138: Main_R.001_end 3
+    401140: Main_R.001_end 4
+    401142: Maj_01_L
+    401144: Maj_01_L 1
+    401146: Maj_01_L 2
+    401148: Maj_01_L 3
+    401150: Maj_01_L 4
+    401152: Maj_01_R
+    401154: Maj_01_R 1
+    401156: Maj_01_R 2
+    401158: Maj_01_R 3
+    401160: Maj_01_R 4
+    401162: Maj_02_L
+    401164: Maj_02_L 1
+    401166: Maj_02_L 2
+    401168: Maj_02_L 3
+    401170: Maj_02_L 4
+    401172: Maj_02_R
+    401174: Maj_02_R 1
+    401176: Maj_02_R 2
+    401178: Maj_02_R 3
+    401180: Maj_02_R 4
+    401182: Maj_03_L
+    401184: Maj_03_L 1
+    401186: Maj_03_L 2
+    401188: Maj_03_L 3
+    401190: Maj_03_L 4
+    401192: Maj_03_L_end
+    401194: Maj_03_L_end 1
+    401196: Maj_03_L_end 2
+    401198: Maj_03_L_end 3
+    401200: Maj_03_L_end 4
+    401202: Maj_03_R
+    401204: Maj_03_R 1
+    401206: Maj_03_R 2
+    401208: Maj_03_R 3
+    401210: Maj_03_R 4
+    401212: Maj_03_R_end
+    401214: Maj_03_R_end 1
+    401216: Maj_03_R_end 2
+    401218: Maj_03_R_end 3
+    401220: Maj_03_R_end 4
+    401222: MASTER_RIG
+    401224: MASTER_RIG 1
+    401226: Mech_Pied_L
+    401228: Mech_Pied_L 1
+    401230: Mech_Pied_L 2
+    401232: Mech_Pied_L 3
+    401234: Mech_Pied_L 4
+    401236: Mech_Pied_R
+    401238: Mech_Pied_R 1
+    401240: Mech_Pied_R 2
+    401242: Mech_Pied_R 3
+    401244: Mech_Pied_R 4
+    401246: Mech_Toes_L
+    401248: Mech_Toes_L 1
+    401250: Mech_Toes_L 2
+    401252: Mech_Toes_L 3
+    401254: Mech_Toes_L 4
+    401256: Mech_Toes_L_end
+    401258: Mech_Toes_L_end 1
+    401260: Mech_Toes_L_end 2
+    401262: Mech_Toes_L_end 3
+    401264: Mech_Toes_L_end 4
+    401266: Mech_Toes_R
+    401268: Mech_Toes_R 1
+    401270: Mech_Toes_R 2
+    401272: Mech_Toes_R 3
+    401274: Mech_Toes_R 4
+    401276: Mech_Toes_R_end
+    401278: Mech_Toes_R_end 1
+    401280: Mech_Toes_R_end 2
+    401282: Mech_Toes_R_end 3
+    401284: Mech_Toes_R_end 4
+    401286: Messi.001
+    401288: P_CageThoracique
+    401290: P_CageThoracique 1
+    401292: P_CageThoracique 2
+    401294: P_CageThoracique 3
+    401296: P_CageThoracique 4
+    401298: P_Hanches
+    401300: P_Hanches 1
+    401302: P_Hanches 2
+    401304: P_Hanches 3
+    401306: P_Hanches 4
+    401308: P_Torse
+    401310: P_Torse 1
+    401312: P_Torse 2
+    401314: P_Torse 3
+    401316: P_Torse 4
+    401318: P_Ventre
+    401320: P_Ventre 1
+    401322: P_Ventre 2
+    401324: P_Ventre 3
+    401326: P_Ventre 4
+    401328: Perso
+    401330: Plane.000
+    401332: Plane.001
+    401334: Plane.002
+    401336: Pointe_Pied_L
+    401338: Pointe_Pied_L 1
+    401340: Pointe_Pied_L 2
+    401342: Pointe_Pied_L 3
+    401344: Pointe_Pied_L 4
+    401346: Pointe_Pied_R
+    401348: Pointe_Pied_R 1
+    401350: Pointe_Pied_R 2
+    401352: Pointe_Pied_R 3
+    401354: Pointe_Pied_R 4
+    401356: Pouce_01_L
+    401358: Pouce_01_L 1
+    401360: Pouce_01_L 2
+    401362: Pouce_01_L 3
+    401364: Pouce_01_L 4
+    401366: Pouce_01_R
+    401368: Pouce_01_R 1
+    401370: Pouce_01_R 2
+    401372: Pouce_01_R 3
+    401374: Pouce_01_R 4
+    401376: Pouce_02_L
+    401378: Pouce_02_L 1
+    401380: Pouce_02_L 2
+    401382: Pouce_02_L 3
+    401384: Pouce_02_L 4
+    401386: Pouce_02_R
+    401388: Pouce_02_R 1
+    401390: Pouce_02_R 2
+    401392: Pouce_02_R 3
+    401394: Pouce_02_R 4
+    401396: Pouce_03_L
+    401398: Pouce_03_L 1
+    401400: Pouce_03_L 2
+    401402: Pouce_03_L 3
+    401404: Pouce_03_L 4
+    401406: Pouce_03_L_end
+    401408: Pouce_03_L_end 1
+    401410: Pouce_03_L_end 2
+    401412: Pouce_03_L_end 3
+    401414: Pouce_03_L_end 4
+    401416: Pouce_03_R
+    401418: Pouce_03_R 1
+    401420: Pouce_03_R 2
+    401422: Pouce_03_R 3
+    401424: Pouce_03_R 4
+    401426: Pouce_03_R_end
+    401428: Pouce_03_R_end 1
+    401430: Pouce_03_R_end 2
+    401432: Pouce_03_R_end 3
+    401434: Pouce_03_R_end 4
+    401436: Prt_Anul_L
+    401438: Prt_Anul_L 1
+    401440: Prt_Anul_L 2
+    401442: Prt_Anul_L 3
+    401444: Prt_Anul_L 4
+    401446: Prt_Anul_R
+    401448: Prt_Anul_R 1
+    401450: Prt_Anul_R 2
+    401452: Prt_Anul_R 3
+    401454: Prt_Anul_R 4
+    401456: Prt_Auri_L
+    401458: Prt_Auri_L 1
+    401460: Prt_Auri_L 2
+    401462: Prt_Auri_L 3
+    401464: Prt_Auri_L 4
+    401466: Prt_Auri_R
+    401468: Prt_Auri_R 1
+    401470: Prt_Auri_R 2
+    401472: Prt_Auri_R 3
+    401474: Prt_Auri_R 4
+    401476: Prt_index_L
+    401478: Prt_index_L 1
+    401480: Prt_index_L 2
+    401482: Prt_index_L 3
+    401484: Prt_index_L 4
+    401486: Prt_Index_R
+    401488: Prt_Index_R 1
+    401490: Prt_Index_R 2
+    401492: Prt_Index_R 3
+    401494: Prt_Index_R 4
+    401496: Switch_IK-FK_Bras_L
+    401498: Switch_IK-FK_Bras_L 1
+    401500: Switch_IK-FK_Bras_L 2
+    401502: Switch_IK-FK_Bras_L 3
+    401504: Switch_IK-FK_Bras_L 4
+    401506: Switch_IK-FK_Bras_L_end
+    401508: Switch_IK-FK_Bras_L_end 1
+    401510: Switch_IK-FK_Bras_L_end 2
+    401512: Switch_IK-FK_Bras_L_end 3
+    401514: Switch_IK-FK_Bras_L_end 4
+    401516: Switch_IK-FK_Bras_R
+    401518: Switch_IK-FK_Bras_R 1
+    401520: Switch_IK-FK_Bras_R 2
+    401522: Switch_IK-FK_Bras_R 3
+    401524: Switch_IK-FK_Bras_R 4
+    401526: Switch_IK-FK_Bras_R_end
+    401528: Switch_IK-FK_Bras_R_end 1
+    401530: Switch_IK-FK_Bras_R_end 2
+    401532: Switch_IK-FK_Bras_R_end 3
+    401534: Switch_IK-FK_Bras_R_end 4
+    401536: Switch_Ik-Fk_Jambe_L
+    401538: Switch_Ik-Fk_Jambe_L 1
+    401540: Switch_Ik-Fk_Jambe_L 2
+    401542: Switch_Ik-Fk_Jambe_L 3
+    401544: Switch_Ik-Fk_Jambe_L 4
+    401546: Switch_Ik-Fk_Jambe_L_end
+    401548: Switch_Ik-Fk_Jambe_L_end 1
+    401550: Switch_Ik-Fk_Jambe_L_end 2
+    401552: Switch_Ik-Fk_Jambe_L_end 3
+    401554: Switch_Ik-Fk_Jambe_L_end 4
+    401556: Switch_Ik-Fk_Jambe_R
+    401558: Switch_Ik-Fk_Jambe_R 1
+    401560: Switch_Ik-Fk_Jambe_R 2
+    401562: Switch_Ik-Fk_Jambe_R 3
+    401564: Switch_Ik-Fk_Jambe_R 4
+    401566: Switch_Ik-Fk_Jambe_R_end
+    401568: Switch_Ik-Fk_Jambe_R_end 1
+    401570: Switch_Ik-Fk_Jambe_R_end 2
+    401572: Switch_Ik-Fk_Jambe_R_end 3
+    401574: Switch_Ik-Fk_Jambe_R_end 4
+    401576: T_shirt.001
+    401578: Talon_Pied_L
+    401580: Talon_Pied_L 1
+    401582: Talon_Pied_L 2
+    401584: Talon_Pied_L 3
+    401586: Talon_Pied_L 4
+    401588: Talon_Pied_R
+    401590: Talon_Pied_R 1
+    401592: Talon_Pied_R 2
+    401594: Talon_Pied_R 3
+    401596: Talon_Pied_R 4
+    401598: Target_Coude_L
+    401600: Target_Coude_L 1
+    401602: Target_Coude_L 2
+    401604: Target_Coude_L 3
+    401606: Target_Coude_L 4
+    401608: Target_Coude_R
+    401610: Target_Coude_R 1
+    401612: Target_Coude_R 2
+    401614: Target_Coude_R 3
+    401616: Target_Coude_R 4
+    401618: Target_IK_Genou_L
+    401620: Target_IK_Genou_L 1
+    401622: Target_IK_Genou_L 2
+    401624: Target_IK_Genou_L 3
+    401626: Target_IK_Genou_L 4
+    401628: Target_IK_Genou_L_end
+    401630: Target_IK_Genou_L_end 1
+    401632: Target_IK_Genou_L_end 2
+    401634: Target_IK_Genou_L_end 3
+    401636: Target_IK_Genou_L_end 4
+    401638: Target_IK_Genou_R
+    401640: Target_IK_Genou_R 1
+    401642: Target_IK_Genou_R 2
+    401644: Target_IK_Genou_R 3
+    401646: Target_IK_Genou_R 4
+    401648: Target_IK_Genou_R_end
+    401650: Target_IK_Genou_R_end 1
+    401652: Target_IK_Genou_R_end 2
+    401654: Target_IK_Genou_R_end 3
+    401656: Target_IK_Genou_R_end 4
+    401658: Tete
+    401660: Tete 1
+    401662: Tete 2
+    401664: Tete 3
+    401666: Tete 4
+    401668: Tete_end
+    401670: Tete_end 1
+    401672: Tete_end 2
+    401674: Tete_end 3
+    401676: Tete_end 4
+    401678: TeteZlatan
+    401680: Torse
+    401682: Torse 1
+    401684: Torse 2
+    401686: Torse 3
+    401688: Torse 4
+    401690: Ventre
+    401692: Ventre 1
+    401694: Ventre 2
+    401696: Ventre 3
+    401698: Ventre 4
+    2100000: Tete_Messi.005
+    2100002: Tete_Zlatan.000
+    2100004: No Name
+    2100006: Worm
+    2100008: Vitre
+    2100010: LeRouaDlaNight_Mat
+    4300000: Messi.001
+    4300002: TeteZlatan
+    4300004: T_shirt.001
+    4300006: Corps.004
+    4300008: Cube.006
+    4300010: Corps.002
+    4300012: Plane.001
+    4300014: Cube
+    4300016: Cube.011
+    4300018: Plane.002
+    4300020: Plane.000
+    4300022: Perso
+    7400000: IDLE
+    7400002: RUN
+    7400004: Armature_Perso|ArmatureAction
+    7400006: Armature_Perso|DASH
+    7400008: Armature_Perso|DASH.001
+    7400010: Armature_Perso|IDLE
+    7400012: Armature_Perso|IDLE.001
+    7400014: Armature_Perso|RUN
+    7400016: Armature_Perso|RUN.001
+    7400018: Armature_Perso|WALK
+    7400020: Armature_Perso|WALK.001
+    7400022: Armature_NewPerso|ArmatureAction
+    7400024: Armature_NewPerso|DASH
+    7400026: Armature_NewPerso|DASH.001
+    7400028: Armature_NewPerso|IDLE
+    7400030: Armature_NewPerso|IDLE.001
+    7400032: Armature_NewPerso|RUN
+    7400034: Armature_NewPerso|RUN.001
+    7400036: Armature_NewPerso|WALK
+    7400038: Armature_NewPerso|WALK.001
+    7400040: Armature.002|ArmatureAction
+    7400042: Armature.003|ArmatureAction
+    7400044: Armature.004|ArmatureAction
+    9500000: //RootNode
+    13700000: Corps.002
+    13700002: Corps.004
+    13700004: Cube
+    13700006: Cube.006
+    13700008: Cube.011
+    13700010: Messi.001
+    13700012: Perso
+    13700014: Plane.000
+    13700016: Plane.001
+    13700018: Plane.002
+    13700020: T_shirt.001
+    13700022: TeteZlatan
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.7
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

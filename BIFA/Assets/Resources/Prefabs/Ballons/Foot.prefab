@@ -108,6 +108,11 @@ PrefabInstance:
       propertyPath: kicks.Array.data[3]
       value: 
       objectReference: {fileID: 8300000, guid: 5322838cb0bf13d48bae49d65f387a4f, type: 3}
+    - target: {fileID: 4938322565959939085, guid: 04975494e3c4df24481615efd2ef93d9,
+        type: 3}
+      propertyPath: defaultVolume
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04975494e3c4df24481615efd2ef93d9, type: 3}
 --- !u!1 &3438287338007411571 stripped

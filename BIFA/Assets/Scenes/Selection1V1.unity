@@ -2767,9 +2767,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558f7ba873fa27847ac41d1e853d1abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Messi_BLEU
+  charName: LeRoua DlaNight
   charSprite: {fileID: 21300000, guid: fa2b06e25f29d59498f3312c775c6284, type: 3}
-  uiSprite: {fileID: 21300000, guid: e83c44569c675624fbd7d3400e3cefaa, type: 3}
+  uiSprite: {fileID: 21300000, guid: abc096521a4a7bb47b16d20a4f137d13, type: 3}
   teeSprite: {fileID: 0}
 --- !u!1 &2932619793591711687 stripped
 GameObject:
@@ -2795,7 +2795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558f7ba873fa27847ac41d1e853d1abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Zlatan_CYAN
+  charName: BIFAmiibo
   charSprite: {fileID: 21300000, guid: 6e68ce0f157b5804bb4d02bb77f9558f, type: 3}
   uiSprite: {fileID: 21300000, guid: 2bb0b1371ff843e49b3435e554212eb4, type: 3}
   teeSprite: {fileID: 0}
