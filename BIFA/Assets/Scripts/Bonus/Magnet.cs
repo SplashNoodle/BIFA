@@ -16,6 +16,8 @@ public class Magnet : MonoBehaviour
 
     private GameObject _ball;
 
+	private AudioSource _src;
+
     private Stopwatch _timer = new Stopwatch(), _lTimer = new Stopwatch();
 
 	public float lifetime = 5f;
@@ -24,6 +26,7 @@ public class Magnet : MonoBehaviour
 
 	void OnEnable() {
         _ball = GameObject.FindGameObjectWithTag("Ballon");
+		_src = GetComponent<AudioSource>();
 		_lTimer.Start();
         _startX = transform.position.x;
         _startY = transform.position.y;
@@ -37,6 +40,8 @@ public class Magnet : MonoBehaviour
 		}
 
 		if (_timer.IsRunning) {
+			if (!_src.isPlaying)
+				_src.Play();
 			float posX, posY, posZ;
 			//On fait trembler l'aimant
 			posX = _startX + Mathf.Sin(Time.time * _speed) * Random.Range(-_amount, _amount);
@@ -54,6 +59,7 @@ public class Magnet : MonoBehaviour
 
         //Si on atteint la fin du timer, on désactive l'aimant
         if (_timer.Elapsed.Seconds == _duration || _lTimer.Elapsed.Seconds >= lifetime) {
+			_src.Stop();
             _timer.Stop();
 			_lTimer.Stop();
             gameObject.SetActive(false);
