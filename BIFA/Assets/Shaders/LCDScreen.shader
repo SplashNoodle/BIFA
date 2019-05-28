@@ -2,13 +2,14 @@
 {
     Properties
     {
-        _Diff ("Diffuse", 2D) = "white" {}
+        [PerRendererData]_Diff ("Diffuse", 2D) = "white" {}
         _Color ("Color", Color) = (1,1,1,1)
 		_PixTex("Pixel Texture", 2D) = "white"{}
 		_Width("Grid Width", Int) = 1
 		_Height("Grid Height", Int) = 1
 		[HDR]_EmColor("Emission", Color) = (1,1,1,1)
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
+		_SpeedX("X Speed", Float) = -1
     }
     SubShader
     {
@@ -36,6 +37,8 @@
 		int _Height;
 		fixed4 _EmColor;
         half _Glossiness;
+		half _OffsetX;
+		half _SpeedX;
 
         // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
         // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
@@ -54,7 +57,7 @@
 
 			
 			uv_X_Diff = _Width / 0.5;
-			uv_X_Diff += IN.uv_Diff.x;
+			uv_X_Diff += IN.uv_Diff.x + _SpeedX * _Time.y;
 			uv_X_Diff *= _Width;
 			uv_X_Diff = floor(uv_X_Diff);
 			uv_X_Diff /= _Width;
