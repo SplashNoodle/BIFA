@@ -23,6 +23,15 @@ public class EventMaster : MonoBehaviour
 	public static EventMaster eMInst;
 	#endregion
 
+	#region Events
+	public delegate void OnStreakerEvent();
+	public static event OnStreakerEvent onStreakerEvent;
+	public void RaiseOnStreakerEvent() {
+		UnityEngine.Debug.Log("GAME START");
+		onStreakerEvent?.Invoke();
+	}
+	#endregion
+
 	#region Methods
 	void OnEnable() {
 		ScoreManager.onGameOver += DisableEvents;
@@ -78,6 +87,7 @@ public class EventMaster : MonoBehaviour
 		//On spawne un streaker aléatoire sur le terrain
 		int rStreaker = Random.Range(0, streakers.Length);
 		streakers[rStreaker].SetActive(true);
+		RaiseOnStreakerEvent();
 	}
 	#endregion
 

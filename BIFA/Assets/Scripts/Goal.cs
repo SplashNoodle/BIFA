@@ -39,11 +39,21 @@ public class Goal : MonoBehaviour
     }
 
     public Equipe equipe;
-    #endregion
+	#endregion
 
-    #region Methods
-    void OnTriggerEnter(Collider col) {
+	#region Events
+	public delegate void OnGoal();
+	public static event OnGoal onGoal;
+	public void RaiseOnGoal() {
+		UnityEngine.Debug.Log("GAME START");
+		onGoal?.Invoke();
+	}
+	#endregion
+
+	#region Methods
+	void OnTriggerEnter(Collider col) {
         if (col.CompareTag("Ballon")||col.CompareTag("GoldenBall")) {
+			RaiseOnGoal();
 			SoundManager.sInst.PlayClip(GetComponent<AudioSource>(), goalClip, goalVolume*settings.masterVolume*settings.effectsVolume);
             if (equipe == Equipe.Equipe1) {
                 ScoreManager.scoreInst.Score2++;

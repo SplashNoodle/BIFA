@@ -17,6 +17,13 @@ public class PanneauxLCD : MonoBehaviour
 	void Awake() {
 		_renderer = GetComponent<Renderer>();
 		_propBlock = new MaterialPropertyBlock();
+		Goal.onGoal += SetGoal;
+		EventMaster.onStreakerEvent += SetStreaker;
+	}
+
+	void OnDisable() {
+		Goal.onGoal -= SetGoal;
+		EventMaster.onStreakerEvent -= SetStreaker;
 	}
 
 	void Update() {
@@ -29,15 +36,19 @@ public class PanneauxLCD : MonoBehaviour
 	}
 
 	public void SetGoal() {
+		showAd = false;
 		_renderer.GetPropertyBlock(_propBlock);
 		_propBlock.SetTexture("_Diff", goalTex);
 		_renderer.SetPropertyBlock(_propBlock);
+		StartCoroutine(WaitForAds());
 	}
 
 	public void SetStreaker() {
+		showAd = false;
 		_renderer.GetPropertyBlock(_propBlock);
 		_propBlock.SetTexture("_Diff", streakerTex);
 		_renderer.SetPropertyBlock(_propBlock);
+		StartCoroutine(WaitForAds());
 	}
 
 	IEnumerator ShowPub() {
@@ -48,5 +59,12 @@ public class PanneauxLCD : MonoBehaviour
 		_renderer.SetPropertyBlock(_propBlock);
 		yield return new WaitForSeconds(10f);
 		isWaiting = false;
+	}
+
+	IEnumerator WaitForAds() {
+		Debug.Log("Waiting for ads");
+		yield return new WaitForSeconds(3f);
+		showAd = true;
+		yield return null;
 	}
 }
