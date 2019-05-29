@@ -16,7 +16,7 @@ public class IceWall : MonoBehaviour
 
 	public GameObject iceWall, vapor;
 
-	void Start() {
+	void OnEnable() {
 		_lTimer.Start();
 		vapor.SetActive(true);
 		vapor.GetComponent<ParticleSystem>().Play();

@@ -62,7 +62,6 @@ public class PanneauxLCD : MonoBehaviour
 	}
 
 	IEnumerator WaitForAds() {
-		Debug.Log("Waiting for ads");
 		yield return new WaitForSeconds(3f);
 		showAd = true;
 		yield return null;

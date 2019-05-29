@@ -16,7 +16,7 @@ public class StunPlayer : MonoBehaviour
 
 	public GameObject lightning, circle;
 
-	void Start() {
+	void OnEnable() {
 		_lTimer.Start();
 		circle.SetActive(true);
 		circle.GetComponent<ParticleSystem>().Play();
