@@ -14255,7 +14255,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &691895535 stripped
 GameObject:
@@ -33430,7 +33430,7 @@ PrefabInstance:
     - target: {fileID: 6549897818719744656, guid: 7a9bbf8f15085104ea1f5ddefc981b82,
         type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6549897818719744656, guid: 7a9bbf8f15085104ea1f5ddefc981b82,
         type: 3}
@@ -34241,6 +34241,16 @@ PrefabInstance:
       propertyPath: goalVolume
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7162930087268399906, guid: feb8ffb18afe6d24090f1e06c21ae762,
+        type: 3}
+      propertyPath: confetti.Array.data[0]
+      value: 
+      objectReference: {fileID: 1280482250}
+    - target: {fileID: 7162930087268399906, guid: feb8ffb18afe6d24090f1e06c21ae762,
+        type: 3}
+      propertyPath: confetti.Array.data[1]
+      value: 
+      objectReference: {fileID: 622314}
     - target: {fileID: 7162930088455412790, guid: feb8ffb18afe6d24090f1e06c21ae762,
         type: 3}
       propertyPath: _equipTxt
@@ -34262,6 +34272,16 @@ PrefabInstance:
       propertyPath: goalVolume
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7162930088455412790, guid: feb8ffb18afe6d24090f1e06c21ae762,
+        type: 3}
+      propertyPath: confetti.Array.data[0]
+      value: 
+      objectReference: {fileID: 281695296}
+    - target: {fileID: 7162930088455412790, guid: feb8ffb18afe6d24090f1e06c21ae762,
+        type: 3}
+      propertyPath: confetti.Array.data[1]
+      value: 
+      objectReference: {fileID: 1257985879}
     - target: {fileID: 7162930086648852616, guid: feb8ffb18afe6d24090f1e06c21ae762,
         type: 3}
       propertyPath: m_StaticEditorFlags

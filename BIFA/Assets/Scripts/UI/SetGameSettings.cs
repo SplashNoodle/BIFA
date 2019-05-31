@@ -78,7 +78,7 @@ public class SetGameSettings : MonoBehaviour
 				if(p.GetAxis("Hor") == 0)
 					_canSelect = true;
 
-				if (p.GetButtonDown("Submit")) {
+				if (p.GetButtonDown("Submit")||p.GetAxis("Ver")<0) {
 					gs.gameType = _type;
 					gs.settingsMode = GameSettings.SettingsMode.Value;
 				}
@@ -92,11 +92,11 @@ public class SetGameSettings : MonoBehaviour
 				if (p.GetAxis("Hor") == 0)
 					_canSelect = true;
 
-				if (p.GetButtonDown("Submit")) {
+				if (p.GetButtonDown("Submit") || p.GetAxis("Ver") < 0) {
 					gs.value = _value;
 					gs.settingsMode = GameSettings.SettingsMode.Ball;
 				}
-				if (p.GetButtonDown("Cancel")) {
+				if (p.GetButtonDown("Cancel") || p.GetAxis("Ver") >0) {
 					gs.settingsMode = GameSettings.SettingsMode.Type;
 				}
 				break;
@@ -109,45 +109,45 @@ public class SetGameSettings : MonoBehaviour
 				if (p.GetAxis("Ver") == 0)
 					_canSelect = true;
 
-				if (p.GetButtonDown("Submit")) {
+				if (p.GetButtonDown("Submit") || p.GetAxis("Hor") > 0) {
 					gs.ballType = _ball;
 					gs.settingsMode = GameSettings.SettingsMode.Events;
 				}
-				if (p.GetButtonDown("Cancel")) {
+				if (p.GetButtonDown("Cancel") || p.GetAxis("Hor") < 0) {
 					gs.settingsMode = GameSettings.SettingsMode.Value;
 				}
 				break;
 			case GameSettings.SettingsMode.Events:
 				SetSelected(3);
-				if (p.GetAxis("Hor") != 0 && _canSelect) {
+				if (p.GetButtonDown("Submit") && _canSelect) {
 					_canSelect = false;
 					gs.events = !gs.events;
 					isEventActive.SetActive(gs.events);
 				}
-				if (p.GetAxis("Hor") == 0)
+				if (p.GetButtonUp("Submit"))
 					_canSelect = true;
 
-				if (p.GetButtonDown("Submit")) {
+				if (p.GetAxis("Hor")>0) {
 					gs.settingsMode = GameSettings.SettingsMode.Objects;
 				}
-				if (p.GetButtonDown("Cancel")) {
+				if (p.GetButtonDown("Cancel") || p.GetAxis("Ver") > 0) {
 					gs.settingsMode = GameSettings.SettingsMode.Ball;
 				}
 				break;
 			case GameSettings.SettingsMode.Objects:
 				SetSelected(4);
-				if (p.GetAxis("Hor") != 0 && _canSelect) {
+				if (p.GetButtonDown("Submit") && _canSelect) {
 					_canSelect = false;
 					gs.objects = !gs.objects;
 					isObjectActive.SetActive(gs.objects);
 				}
-				if (p.GetAxis("Hor") == 0)
+				if (p.GetButtonUp("Submit"))
 					_canSelect = true;
 
-				if (p.GetButtonDown("Submit")) {
+				if (p.GetAxis("Ver") < 0) {
 					gs.settingsMode = GameSettings.SettingsMode.Validation;
 				}
-				if (p.GetButtonDown("Cancel")) {
+				if (p.GetButtonDown("Cancel") || p.GetAxis("Hor") < 0) {
 					gs.settingsMode = GameSettings.SettingsMode.Events;
 				}
 				break;
@@ -156,7 +156,7 @@ public class SetGameSettings : MonoBehaviour
 				if (p.GetButtonDown("Submit")) {
 					LoadSettings();
 				}
-				if (p.GetButtonDown("Cancel")) {
+				if (p.GetButtonDown("Cancel") || p.GetAxis("Ver") > 0) {
 					gs.settingsMode = GameSettings.SettingsMode.Objects;
 				}
 				break;

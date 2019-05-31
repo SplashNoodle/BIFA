@@ -79,6 +79,7 @@ public class EventMaster : MonoBehaviour
 		//On spawne des balles temporaires supplémentaires
 		for (int i = 0; i < balls.Length; i++) {
 			balls[i].SetActive(true);
+			tempBallIndics[i].GetComponent<BallIndicator>().ball = balls[i];
 			tempBallIndics[i].SetActive(true);
 		}
 	}
