@@ -28,6 +28,8 @@ public class Goal : MonoBehaviour
 	[Range(0f,1f)]
 	public float goalVolume;
 
+	public GameObject[] confetti = new GameObject[2];
+
 	public AudioClip goalClip;
 
 	public GlobalSettings settings;
@@ -45,12 +47,19 @@ public class Goal : MonoBehaviour
 	public delegate void OnGoal();
 	public static event OnGoal onGoal;
 	public void RaiseOnGoal() {
-		UnityEngine.Debug.Log("GAME START");
 		onGoal?.Invoke();
 	}
 	#endregion
 
 	#region Methods
+	void OnEnable() {
+		ScoreManager.onGameOver += Confetti;
+	}
+
+	void OnDisable() {
+		ScoreManager.onGameOver -= Confetti;
+	}
+
 	void OnTriggerEnter(Collider col) {
         if (col.CompareTag("Ballon")||col.CompareTag("GoldenBall")) {
 			RaiseOnGoal();
@@ -69,11 +78,18 @@ public class Goal : MonoBehaviour
 				ScoreManager.scoreInst.UpdateDisplay(_equipTxt, ScoreManager.scoreInst.Score1);
                 ReputationManager.repInst.IncreaseRep(0, .1f);
             }
-            _ = col.CompareTag("Ballon")?StartCoroutine(col.GetComponent<Ballon>().Respawn(0f)):StartCoroutine(col.GetComponent<Ballon>().RespawnGolden());
+            _ = col.CompareTag("Ballon")?StartCoroutine(col.GetComponent<Ballon>().Respawn(1f)):StartCoroutine(col.GetComponent<Ballon>().RespawnGolden());
         }
 
         if(col.CompareTag("TempBallon"))
             StartCoroutine(col.GetComponent<Ballon>().Respawn(0f));
     }
-    #endregion
+	#endregion
+
+	#region Public Methods
+	public void Confetti() {
+		confetti[0].GetComponent<ParticleSystem>().Play();
+		confetti[1].GetComponent<ParticleSystem>().Play();
+	}
+	#endregion
 }

@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PanneauxLCD
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: f72e4cfb940c54d4687723402b8012b9,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: goalTex
+    value: 
+    objectReference: {fileID: 2800000, guid: a37817eb7738a0e4ba0c5d35c2be854f, type: 3}
+  - target: {fileID: 0}
+    propertyPath: streakerTex
+    value: 
+    objectReference: {fileID: 2800000, guid: 99987a965cb64544d86f33a2bd2b211c, type: 3}
+  - target: {fileID: 0}
+    propertyPath: textures.Array.size
+    value: 8
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: textures.Array.data[0]
+    value: 
+    objectReference: {fileID: 2800000, guid: be52a7a4324ffbf4384f27d307d4e139, type: 3}
+  - target: {fileID: 0}
+    propertyPath: textures.Array.data[1]
+    value: 
+    objectReference: {fileID: 2800000, guid: 61d6d7ec6c84e6a46adedae5d95df720, type: 3}
+  - target: {fileID: 0}
+    propertyPath: textures.Array.data[2]
+    value: 
+    objectReference: {fileID: 2800000, guid: 192a5d4f5096c1a4cb5cb758c5d270fe, type: 3}
+  - target: {fileID: 0}
+    propertyPath: textures.Array.data[3]
+    value: 
+    objectReference: {fileID: 2800000, guid: 65c4485ae3466f447b8bef1844b92425, type: 3}
+  - target: {fileID: 0}
+    propertyPath: textures.Array.data[4]
+    value: 
+    objectReference: {fileID: 2800000, guid: 64f9bdfcf2e78ed408c47c9d927227cf, type: 3}
+  - target: {fileID: 0}
+    propertyPath: textures.Array.data[5]
+    value: 
+    objectReference: {fileID: 2800000, guid: 7e22ae4a3e4efcc4a946fd2a57ee02c8, type: 3}
+  - target: {fileID: 0}
+    propertyPath: textures.Array.data[6]
+    value: 
+    objectReference: {fileID: 2800000, guid: bd2fda4d5dc5f48458623954bf803d34, type: 3}
+  - target: {fileID: 0}
+    propertyPath: textures.Array.data[7]
+    value: 
+    objectReference: {fileID: 2800000, guid: c7742a34f4bc4a247b44a2c20846789a, type: 3}

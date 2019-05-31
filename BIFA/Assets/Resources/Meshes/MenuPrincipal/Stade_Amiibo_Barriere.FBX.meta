@@ -1,0 +1,321 @@
+fileFormatVersion: 2
+guid: db29051d3f5d12249b65409e16541a04
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Amibo1
+    100002: Amibo2
+    100004: Barriere
+    100006: Barriere 1
+    100008: Barriere001
+    100010: Barriere002
+    100012: Barriere003
+    100014: Barriere004
+    100016: Barriere005
+    100018: Barriere006
+    100020: Barriere007
+    100022: Barriere008
+    100024: Barriere009
+    100026: Barriere010
+    100028: Barriere011
+    100030: Barriere012
+    100032: Barriere013
+    100034: Barriere014
+    100036: Barriere015
+    100038: Barriere016
+    100040: Barriere017
+    100042: Barriere018
+    100044: Barriere019
+    100046: Barriere020
+    100048: Barriere021
+    100050: Bifa_Stadium
+    100052: Chaussures001
+    100054: Chaussures002
+    100056: Curve.003
+    100058: Gradins
+    100060: Logo Bifa
+    100062: Maillot001
+    100064: Maillot002
+    100066: Perso001
+    100068: Perso002
+    100070: Plane
+    100072: Plane.002
+    100074: Short001
+    100076: Short002
+    100078: Socle_Statue
+    100080: Socle_Statue001
+    100082: Sphere.004
+    100084: Sphere.005
+    100086: Stade
+    100088: //RootNode
+    100090: Statue
+    100092: Statue001
+    100094: Structure_Stade
+    400000: Amibo1
+    400002: Amibo2
+    400004: Barriere
+    400006: Barriere 1
+    400008: Barriere001
+    400010: Barriere002
+    400012: Barriere003
+    400014: Barriere004
+    400016: Barriere005
+    400018: Barriere006
+    400020: Barriere007
+    400022: Barriere008
+    400024: Barriere009
+    400026: Barriere010
+    400028: Barriere011
+    400030: Barriere012
+    400032: Barriere013
+    400034: Barriere014
+    400036: Barriere015
+    400038: Barriere016
+    400040: Barriere017
+    400042: Barriere018
+    400044: Barriere019
+    400046: Barriere020
+    400048: Barriere021
+    400050: Bifa_Stadium
+    400052: Chaussures001
+    400054: Chaussures002
+    400056: Curve.003
+    400058: Gradins
+    400060: Logo Bifa
+    400062: Maillot001
+    400064: Maillot002
+    400066: Perso001
+    400068: Perso002
+    400070: Plane
+    400072: Plane.002
+    400074: Short001
+    400076: Short002
+    400078: Socle_Statue
+    400080: Socle_Statue001
+    400082: Sphere.004
+    400084: Sphere.005
+    400086: Stade
+    400088: //RootNode
+    400090: Statue
+    400092: Statue001
+    400094: Structure_Stade
+    2100000: 'Material #264'
+    2100002: 'Material #171'
+    2100004: 'Material #166'
+    2100006: 'Material #167'
+    2100008: 'Material #165'
+    2100010: 'Material #259'
+    2100012: 'Material #263'
+    2100014: 'Material #180'
+    2100016: 'Material #181'
+    2100018: 'Material #260'
+    2100020: 'Material #182'
+    2100022: 'Material #156'
+    2100024: 'Material #198'
+    2100026: 'Material #199'
+    2100028: Material.002
+    2100030: 'Material #204'
+    2100032: 'Material #203'
+    2300000: Barriere 1
+    2300002: Barriere001
+    2300004: Barriere002
+    2300006: Barriere003
+    2300008: Barriere004
+    2300010: Barriere005
+    2300012: Barriere006
+    2300014: Barriere007
+    2300016: Barriere008
+    2300018: Barriere009
+    2300020: Barriere010
+    2300022: Barriere011
+    2300024: Barriere012
+    2300026: Barriere013
+    2300028: Barriere014
+    2300030: Barriere015
+    2300032: Barriere016
+    2300034: Barriere017
+    2300036: Barriere018
+    2300038: Barriere019
+    2300040: Barriere020
+    2300042: Barriere021
+    2300044: Chaussures001
+    2300046: Chaussures002
+    2300048: Curve.003
+    2300050: Gradins
+    2300052: Maillot001
+    2300054: Maillot002
+    2300056: Perso001
+    2300058: Perso002
+    2300060: Plane
+    2300062: Plane.002
+    2300064: Short001
+    2300066: Short002
+    2300068: Socle_Statue
+    2300070: Socle_Statue001
+    2300072: Sphere.004
+    2300074: Sphere.005
+    2300076: Structure_Stade
+    3300000: Barriere 1
+    3300002: Barriere001
+    3300004: Barriere002
+    3300006: Barriere003
+    3300008: Barriere004
+    3300010: Barriere005
+    3300012: Barriere006
+    3300014: Barriere007
+    3300016: Barriere008
+    3300018: Barriere009
+    3300020: Barriere010
+    3300022: Barriere011
+    3300024: Barriere012
+    3300026: Barriere013
+    3300028: Barriere014
+    3300030: Barriere015
+    3300032: Barriere016
+    3300034: Barriere017
+    3300036: Barriere018
+    3300038: Barriere019
+    3300040: Barriere020
+    3300042: Barriere021
+    3300044: Chaussures001
+    3300046: Chaussures002
+    3300048: Curve.003
+    3300050: Gradins
+    3300052: Maillot001
+    3300054: Maillot002
+    3300056: Perso001
+    3300058: Perso002
+    3300060: Plane
+    3300062: Plane.002
+    3300064: Short001
+    3300066: Short002
+    3300068: Socle_Statue
+    3300070: Socle_Statue001
+    3300072: Sphere.004
+    3300074: Sphere.005
+    3300076: Structure_Stade
+    4300000: Socle_Statue
+    4300002: Sphere.004
+    4300004: Short001
+    4300006: Chaussures001
+    4300008: Maillot001
+    4300010: Perso001
+    4300012: Socle_Statue001
+    4300014: Chaussures002
+    4300016: Maillot002
+    4300018: Perso002
+    4300020: Short002
+    4300022: Sphere.005
+    4300024: Barriere021
+    4300026: Barriere020
+    4300028: Barriere019
+    4300030: Barriere018
+    4300032: Barriere017
+    4300034: Barriere016
+    4300036: Barriere015
+    4300038: Barriere014
+    4300040: Barriere013
+    4300042: Barriere012
+    4300044: Barriere011
+    4300046: Barriere010
+    4300048: Barriere009
+    4300050: Barriere008
+    4300052: Barriere007
+    4300054: Barriere006
+    4300056: Barriere005
+    4300058: Barriere004
+    4300060: Barriere003
+    4300062: Barriere002
+    4300064: Barriere001
+    4300066: Barriere
+    4300068: Structure_Stade
+    4300070: Gradins
+    4300072: Curve.003
+    4300074: Plane.002
+    4300076: Plane
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

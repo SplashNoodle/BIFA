@@ -117,16 +117,19 @@ public class Ballon : MonoBehaviour
 		if (transform.parent != null)
 			transform.parent = null;
         GetComponent<Squash>().Mesh.GetComponent<MeshRenderer>().enabled = false;
+		GetComponent<Rigidbody>().isKinematic = true;
+		GetComponent<Rigidbody>().useGravity = false;
 		_spawnEffect.SetActive(true);
-        //On attend x secondes
-        yield return new WaitForSeconds(wait);
         //On met la balle à la position du spawn
         transform.position = _spwnPt.position;
         //On remet à 0 la velocité de la balle
         _rb.velocity = Vector3.zero;
         _rb.angularVelocity = Vector3.zero;
+        //On attend x secondes
+        yield return new WaitForSeconds(wait);
 		//On réactive la balle
 		GetComponent<Rigidbody>().isKinematic = false;
+		GetComponent<Rigidbody>().useGravity = true;
 		_spawnEffect.transform.position = transform.position;
 		_spawnEffect.SetActive(true);
 		GetComponent<Squash>().Mesh.GetComponent<MeshRenderer>().enabled = true;
@@ -143,14 +146,15 @@ public class Ballon : MonoBehaviour
 		if (transform.parent != null)
 			transform.parent = null;
 		GetComponent<Squash>().Mesh.GetComponent<MeshRenderer>().enabled = false;
+		GetComponent<Rigidbody>().isKinematic = true;
 		_spawnEffect.SetActive(true);
-		//On attend x secondes
-		yield return new WaitForEndOfFrame();
 		//On met la balle à la position du spawn
 		transform.position = _spwnPt.position;
 		//On remet à 0 la velocité de la balle
 		_rb.velocity = Vector3.zero;
 		_rb.angularVelocity = Vector3.zero;
+		//On attend x secondes
+		yield return new WaitForEndOfFrame();
 		GetComponent<Squash>().Mesh.GetComponent<MeshRenderer>().enabled = true;
 		GetComponent<Rigidbody>().isKinematic = false;
 		_respawning = false;
