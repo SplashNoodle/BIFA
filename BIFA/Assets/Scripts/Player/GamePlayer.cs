@@ -87,7 +87,8 @@ public class GamePlayer : MonoBehaviour
 		_anim.SetBool("Moving", false);
 		if (dashUIAnim != null)
 			dashUIAnim.SetFloat("DashRecovery", _dashCooldown);
-		hook.SetActive(false);
+		if (hook != null)
+			hook.SetActive(false);
 	}
 
 	void FixedUpdate() {
@@ -100,7 +101,7 @@ public class GamePlayer : MonoBehaviour
 					_h = ReInput.players.GetPlayer(_pInfos.pIndex).GetAxis("Hor");
 					_v = ReInput.players.GetPlayer(_pInfos.pIndex).GetAxis("Ver");
 					_dashed = ReInput.players.GetPlayer(_pInfos.pIndex).GetButtonDown("AbButton1");
-					if(_dashed)
+					if (_dashed)
 						_anim.SetTrigger("Dashed");
 					if (_canMove)
 						InGameMove();
@@ -110,7 +111,7 @@ public class GamePlayer : MonoBehaviour
 						else
 							ReleaseBall();
 					}
-					
+
 					InGameDirection();
 					_useBonus = ReInput.players.GetPlayer(_pInfos.pIndex).GetButtonDown("AbButton2");
 				}
@@ -148,7 +149,7 @@ public class GamePlayer : MonoBehaviour
 		//On attribue _playerSpeed en fonction de _targetSpeed
 		_currentSpeed = Mathf.SmoothDamp(_currentSpeed, _targetSpeed, ref _wantedSpeed, .5f / _accel);
 		transform.Translate(Vector3.right * _currentSpeed * Time.fixedDeltaTime);
-			   
+
 		_rb.velocity = _rb.angularVelocity = Vector3.zero;
 	}
 
@@ -257,11 +258,11 @@ public class GamePlayer : MonoBehaviour
 
 	#region Coroutines
 	IEnumerator Dash() {
+		//On empêche la possibilité de dasher
+		_allowDash = false;
 		float temp = _maxSpeed;
 		if (dashUIAnim != null)
 			dashUIAnim.SetTrigger("Dashed");
-		//On empêche la possibilité de dasher
-		_allowDash = false;
 		//On active le trail renderer
 		_trail.enabled = true;
 		//On active le trigger
