@@ -101,7 +101,7 @@ public class GamePlayer : MonoBehaviour
 					_h = ReInput.players.GetPlayer(_pInfos.pIndex).GetAxis("Hor");
 					_v = ReInput.players.GetPlayer(_pInfos.pIndex).GetAxis("Ver");
 					_dashed = ReInput.players.GetPlayer(_pInfos.pIndex).GetButtonDown("AbButton1");
-					if (_dashed)
+					if (_dashed && _allowDash)
 						_anim.SetTrigger("Dashed");
 					if (_canMove)
 						InGameMove();

@@ -162,6 +162,14 @@ public class GameManager : MonoBehaviour
 		Application.Quit();
 	}
 
+	public void Load1V1() {
+		LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Selection1V1"));
+	}
+
+	public void Load2V2() {
+		LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Selection2V2"));
+	}
+
 	public void ReloadSelection() {
 		Debug.Log("RELOAD CHARACTER SELECTION");
 		CharAndTeeSelection.readyCount = 0;
