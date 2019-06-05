@@ -20,7 +20,7 @@ public class PauseScreen : MonoBehaviour
 
 	private float _deadZone = .1f;
 
-	private bool _canSelect = true;
+	private bool _canSelect = true, _submitted = false;
 
 	private Player _p;
 	#endregion
@@ -63,19 +63,22 @@ public class PauseScreen : MonoBehaviour
 		else
 			h = 0;
 
-		if ((Mathf.Abs(h) >= _deadZone || Mathf.Abs(v) >= _deadZone) && _canSelect) {
-			_canSelect = false;
-			//Si le joueur dirige son stick horizontalement
-			if (Mathf.Abs(h) >= _deadZone)
-				ButtonSelect(buttonsArray, Mathf.Sign(h), false);
-			//Si le joueur dirige son stick verticalement
-			if (Mathf.Abs(v) >= _deadZone)
-				ButtonSelect(buttonsArray, Mathf.Sign(v), true);
+		if (!_submitted) {
+			if ((Mathf.Abs(h) >= _deadZone || Mathf.Abs(v) >= _deadZone) && _canSelect) {
+				_canSelect = false;
+				//Si le joueur dirige son stick horizontalement
+				if (Mathf.Abs(h) >= _deadZone)
+					ButtonSelect(buttonsArray, Mathf.Sign(h), false);
+				//Si le joueur dirige son stick verticalement
+				if (Mathf.Abs(v) >= _deadZone)
+					ButtonSelect(buttonsArray, Mathf.Sign(v), true);
+			}
+			else if ((Mathf.Abs(h) < _deadZone && Mathf.Abs(v) < _deadZone))
+				_canSelect = true;
 		}
-		else if ((Mathf.Abs(h) < _deadZone && Mathf.Abs(v) < _deadZone))
-			_canSelect = true;
 
 		if (_p.GetButtonDown("Submit")) {
+			_submitted = true;
 			switch (_buttonIndex) {
 				case 0:
 					GameManager.gmInst.Resume();
@@ -93,6 +96,7 @@ public class PauseScreen : MonoBehaviour
 					break;
 				case 4:
 					//On charge la scène du menu principal
+					GameManager.gmInst.LoadMainMenu();
 					break;
 				case 5:
 					//On quitte le jeu

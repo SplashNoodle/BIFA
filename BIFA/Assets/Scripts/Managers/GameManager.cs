@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
 
 	public enum GameMode
 	{
+		Main,
 		Selection,
 		Menu,
 		Game
@@ -61,6 +62,10 @@ public class GameManager : MonoBehaviour
 	#endregion
 
 	#region Methods
+	private void OnEnable() {
+		SceneManager.sceneLoaded += AllowLoad;
+	}
+
 	void Awake() {
 		if (gmInst == null) {
 			gmInst = this;
@@ -94,6 +99,8 @@ public class GameManager : MonoBehaviour
 			mode = GameMode.Menu;
 
 		switch (mode) {
+			case GameMode.Main:
+				break;
 			case GameMode.Selection:
 				Selection();
 				break;
@@ -146,6 +153,11 @@ public class GameManager : MonoBehaviour
 	#endregion
 
 	#region Public Methods
+	public void AllowLoad(Scene s, LoadSceneMode m) {
+		Debug.Log("Scene " + s.name + " was loaded successfully in mode " + m);
+		opStart = false;
+	}
+
 	public void Pause() {
 		Time.timeScale = 0;
 	}
@@ -163,29 +175,45 @@ public class GameManager : MonoBehaviour
 	}
 
 	public void Load1V1() {
-		LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Selection1V1"));
+		if (!opStart) {
+			opStart = true;
+			LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Selection1V1"));
+		}
 	}
 
 	public void Load2V2() {
-		LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Selection2V2"));
+		if (!opStart) {
+			opStart = true;
+			LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Selection2V2"));
+		}
 	}
 
 	public void ReloadSelection() {
-		Debug.Log("RELOAD CHARACTER SELECTION");
-		CharAndTeeSelection.readyCount = 0;
-		if (SceneManager.GetActiveScene().name == "Stade1V1")
-			LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Selection1V1"));
-		if (SceneManager.GetActiveScene().name == "Stade2V2")
-			LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Selection2V2"));
+		if (!opStart) {
+			Debug.Log("RELOAD CHARACTER SELECTION");
+			CharAndTeeSelection.readyCount = 0;
+			if (SceneManager.GetActiveScene().name == "Stade1V1")
+				LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Selection1V1"));
+			if (SceneManager.GetActiveScene().name == "Stade2V2")
+				LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Selection2V2"));
+		}
 	}
 
 	public void ReloadGame() {
-		Debug.Log("RELOAD GAME");
-		if (SceneManager.GetActiveScene().name == "Stade1V1")
-			LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Stade1V1"));
-		if (SceneManager.GetActiveScene().name == "Stade2V2")
-			LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Stade2V2"));
-		SceneManager.sceneLoaded += RaiseOnGameReload;
+		if (!opStart) {
+			Debug.Log("RELOAD GAME");
+			if (SceneManager.GetActiveScene().name == "Stade1V1")
+				LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Stade1V1"));
+			if (SceneManager.GetActiveScene().name == "Stade2V2")
+				LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Stade2V2"));
+			SceneManager.sceneLoaded += RaiseOnGameReload;
+		}
+	}
+
+	public void LoadMainMenu() {
+		if (!opStart) {
+			LoadingUI.loadInst.Show(SceneManager.LoadSceneAsync("Scene_Main"));
+		}
 	}
 	#endregion
 }

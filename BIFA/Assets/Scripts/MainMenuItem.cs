@@ -1,11 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 using Rewired;
 
+using TMPro;
+
 public class MainMenuItem : MonoBehaviour
 {
+	public string infoText;
+
+	public GameObject info;
+
 	public Animator[] anim;
 
 	public enum Item
@@ -23,12 +30,17 @@ public class MainMenuItem : MonoBehaviour
 
 	public PInfos pInfos;
 
+	public TextMeshProUGUI infoTextDisplay;
+
 	void OnTriggerEnter(Collider col) {
-		if (col.CompareTag("Player"))
+		if (col.CompareTag("Player")) {
+			info.SetActive(true);
+			infoTextDisplay.text = infoText;
 			if (anim.Length != 0)
 				for (int i = 0; i < anim.Length; i++) {
-				anim[i].SetBool("OnTrigger", true);
+					anim[i].SetBool("OnTrigger", true);
 				}
+		}
 	}
 
 	void OnTriggerStay(Collider col) {
@@ -55,10 +67,12 @@ public class MainMenuItem : MonoBehaviour
 	}
 
 	void OnTriggerExit(Collider col) {
-		if (col.CompareTag("Player"))
+		if (col.CompareTag("Player")) {
+			info.SetActive(false);
 			if (anim.Length != 0)
 				for (int i = 0; i < anim.Length; i++) {
 					anim[i].SetBool("OnTrigger", false);
 				}
+		}
 	}
 }
