@@ -95,7 +95,9 @@ MonoBehaviour:
   _forceDivider: 1
   _speed: 1
   _amount: 0.1
+  _defaultVolume: 0
   lifetime: 5
+  effect: {fileID: 0}
   player: {fileID: 0}
 --- !u!82 &506695313777090451
 AudioSource:
@@ -107,11 +109,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4b3eb255bfd6ded45b4457e199e76c8d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 89701e08057d4bb4f950817b5c0fd2f4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

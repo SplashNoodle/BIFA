@@ -75,4 +75,9 @@ public class GrabBall : MonoBehaviour
     void OnDisable() {
         transform.position = _startPos.position;
     }
+
+	void UpdateLine() {
+		GetComponent<LineRenderer>().SetPosition(0, _startPos.position);
+		GetComponent<LineRenderer>().SetPosition(1, transform.position);
+	}
 }

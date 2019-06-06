@@ -2,15 +2,22 @@
 using UnityEngine;
 #endregion
 
+[RequireComponent(typeof(AudioSource))]
 public class Bonus : MonoBehaviour
 {
     #region Private Variables
     [SerializeField]
     private BonusType bonusT = BonusType.Undefined;
-    #endregion
+	#endregion
 
-    #region Public Variables
+	#region Public Variables
+	public float defaultVolume = .7f;
+
+	public AudioSource bonusSoundMaster;
+
     public GameObject[] magnets;
+
+	public AudioClip takeBonus;
 
     public enum BonusType
     {
@@ -24,8 +31,15 @@ public class Bonus : MonoBehaviour
     #endregion
 
     #region Methods
+	void OnEnable() {
+		if (bonusSoundMaster == null)
+			bonusSoundMaster = GameObject.FindGameObjectWithTag("BSMaster").GetComponent<AudioSource>();
+		bonusSoundMaster.volume = defaultVolume * SoundManager.sInst.settings.effectsVolume;
+	}
+
     void OnTriggerEnter(Collider col) {
         if (col.CompareTag("Player")) {
+			SoundManager.sInst.PlayClip(bonusSoundMaster, takeBonus, defaultVolume * SoundManager.sInst.settings.effectsVolume);
             switch (BonusT) {
                 case BonusType.Aimant:
                     if (col.GetComponent<GamePlayer>().PlayerInfos.equipe == 0)

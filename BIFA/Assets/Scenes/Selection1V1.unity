@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.2257134, b: 0.30692226, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1491,6 +1491,7 @@ GameObject:
   - component: {fileID: 279932511}
   - component: {fileID: 279932514}
   - component: {fileID: 279932515}
+  - component: {fileID: 279932516}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1610,6 +1611,19 @@ MonoBehaviour:
   readys:
   - {fileID: 0}
   - {fileID: 0}
+--- !u!114 &279932516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279932510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7ee42da1c903641a4a8789dcaaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settings: {fileID: 11400000, guid: 04c68bdd454155f4db4ba8d65d1538a3, type: 2}
 --- !u!1 &825774406
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,10 +2047,12 @@ MonoBehaviour:
   - Big Bernie - Un plan bien huile
   - ONLAP - Miracle
   - The Grogs - Mr John
+  - ONLAP - Running
   musics:
   - {fileID: 8300000, guid: eb9cf907b1587c044a10f6c876c2cf16, type: 3}
   - {fileID: 8300000, guid: 3de1f6fc9e805e641a67f376fc78f66e, type: 3}
   - {fileID: 8300000, guid: ee207fc5a1e573a4fa03f9eee8bc19a8, type: 3}
+  - {fileID: 8300000, guid: 9baa6699107d0df4ea06bb72ba5673fc, type: 3}
   title: {fileID: 850145051}
   settings: {fileID: 11400000, guid: 04c68bdd454155f4db4ba8d65d1538a3, type: 2}
 --- !u!1 &1780620931
@@ -2851,9 +2867,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fa839d60829f3f94cb8415a861dbc6cf, type: 3}
   - {fileID: 21300000, guid: 004e20d283d94f04a95a8e786bedfa63, type: 3}
   - {fileID: 21300000, guid: 865e7c18df3ffa54c89a15f7f184d099, type: 3}
-  move: {fileID: 0}
-  select: {fileID: 0}
-  cancel: {fileID: 0}
+  move: {fileID: 8300000, guid: ef90e9b27a14dc24aa782596a2840cf1, type: 3}
+  select: {fileID: 8300000, guid: 29140d53dd3c68447afc43f0b5518107, type: 3}
+  cancel: {fileID: 8300000, guid: 70954147215372c458045bc247e3ddba, type: 3}
   pseudoDisplay: {fileID: 4584217356373876467}
   pInfos: {fileID: 11400000, guid: 27998d40e0be910459c7663a902859d0, type: 2}
   mateInfos: {fileID: 0}
@@ -2999,9 +3015,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fa839d60829f3f94cb8415a861dbc6cf, type: 3}
   - {fileID: 21300000, guid: 004e20d283d94f04a95a8e786bedfa63, type: 3}
   - {fileID: 21300000, guid: 865e7c18df3ffa54c89a15f7f184d099, type: 3}
-  move: {fileID: 0}
-  select: {fileID: 0}
-  cancel: {fileID: 0}
+  move: {fileID: 8300000, guid: ef90e9b27a14dc24aa782596a2840cf1, type: 3}
+  select: {fileID: 8300000, guid: 29140d53dd3c68447afc43f0b5518107, type: 3}
+  cancel: {fileID: 8300000, guid: 70954147215372c458045bc247e3ddba, type: 3}
   pseudoDisplay: {fileID: 1376203669689694583}
   pInfos: {fileID: 11400000, guid: da662e1e78b15564584e380653f0af70, type: 2}
   mateInfos: {fileID: 0}

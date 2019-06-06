@@ -66,10 +66,10 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FlickerSpeed: 5
+    - _FlickerSpeed: 3
     - _Fold: 3
-    - _GlitchIntensity: 0.25
-    - _GlitchSpeed: 10
+    - _GlitchIntensity: -0.25
+    - _GlitchSpeed: 9.5
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1

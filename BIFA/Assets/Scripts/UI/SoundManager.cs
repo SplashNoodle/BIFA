@@ -6,6 +6,10 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
+	#region Public Variables
+	public GlobalSettings settings;
+	#endregion
+
 	#region Public Static Variables
 	public static SoundManager sInst;
 	#endregion
@@ -42,7 +46,7 @@ public class SoundManager : MonoBehaviour
 	public void PlayClip(AudioSource src, AudioClip clip, float v) {
 		if (src.clip != clip)
 			src.clip = clip;
-		src.volume = v;
+		src.volume = v*settings.masterVolume;
 		src.Play();
 	}
 	#endregion

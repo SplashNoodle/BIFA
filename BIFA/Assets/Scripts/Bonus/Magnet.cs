@@ -10,7 +10,7 @@ public class Magnet : MonoBehaviour
     private float _forceDivider = 1f;
 
     [SerializeField]
-    private float _speed = 1f, _amount = .1f;
+    private float _speed = 1f, _amount = .1f, _defaultVolume;
 
     private float _startX, _startY, _startZ;
 
@@ -22,11 +22,14 @@ public class Magnet : MonoBehaviour
 
 	public float lifetime = 5f;
 
+	public GameObject effect;
+
 	public GamePlayer player;
 
 	void OnEnable() {
         _ball = GameObject.FindGameObjectWithTag("Ballon");
 		_src = GetComponent<AudioSource>();
+		_defaultVolume = _src.volume;
 		_lTimer.Start();
         _startX = transform.position.x;
         _startY = transform.position.y;
@@ -34,6 +37,7 @@ public class Magnet : MonoBehaviour
     }
 
     void Update() {
+		_src.volume = _defaultVolume * SoundManager.sInst.settings.effectsVolume * SoundManager.sInst.settings.effectsVolume;
 		if (player.UseBonus) {
 			_timer.Start();
 			_lTimer.Stop();
@@ -42,6 +46,8 @@ public class Magnet : MonoBehaviour
 		if (_timer.IsRunning) {
 			if (!_src.isPlaying)
 				_src.Play();
+			if (!effect.activeSelf)
+				effect.SetActive(true);
 			float posX, posY, posZ;
 			//On fait trembler l'aimant
 			posX = _startX + Mathf.Sin(Time.time * _speed) * Random.Range(-_amount, _amount);

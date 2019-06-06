@@ -92,22 +92,22 @@ PrefabInstance:
         type: 3}
       propertyPath: kicks.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: 427df830b0bc4614c8d02951c4cea3ac, type: 3}
+      objectReference: {fileID: 8300000, guid: adc85ca4afd212243bab98bcec28b158, type: 3}
     - target: {fileID: 4938322565959939085, guid: 04975494e3c4df24481615efd2ef93d9,
         type: 3}
       propertyPath: kicks.Array.data[1]
       value: 
-      objectReference: {fileID: 8300000, guid: bf2b18ae2a3ae7d4193a1fd2fdc2104c, type: 3}
+      objectReference: {fileID: 8300000, guid: a462d8d92e54b6c419fd68e30090f081, type: 3}
     - target: {fileID: 4938322565959939085, guid: 04975494e3c4df24481615efd2ef93d9,
         type: 3}
       propertyPath: kicks.Array.data[2]
       value: 
-      objectReference: {fileID: 8300000, guid: eff8d6e0ec30b3842b53ec50f6db65a2, type: 3}
+      objectReference: {fileID: 8300000, guid: 6e608742cbff7ec4782aaed6669181a6, type: 3}
     - target: {fileID: 4938322565959939085, guid: 04975494e3c4df24481615efd2ef93d9,
         type: 3}
       propertyPath: kicks.Array.data[3]
       value: 
-      objectReference: {fileID: 8300000, guid: 5322838cb0bf13d48bae49d65f387a4f, type: 3}
+      objectReference: {fileID: 8300000, guid: a6f2e352a6bebb043a05384c388462df, type: 3}
     - target: {fileID: 4938322565959939085, guid: 04975494e3c4df24481615efd2ef93d9,
         type: 3}
       propertyPath: defaultVolume

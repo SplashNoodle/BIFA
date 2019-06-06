@@ -81,6 +81,8 @@ public class CharAndTeeSelection : MonoBehaviour
 		readyCount = 0;
 		maxReadyCount = SetMaxReadyCount;
 
+		_src.volume = SoundManager.sInst.settings.interfaceVolume;
+
 		ReInput.ControllerDisconnectedEvent += ReInput_ControllerDisconnectedEvent;
 	}
 
@@ -140,7 +142,7 @@ public class CharAndTeeSelection : MonoBehaviour
 			//Si le joueur appuie sur le bouton Submit
 			if (p.GetButtonDown("Submit")) {
 				_src.clip = select;
-				_src.Play();
+				SoundManager.sInst.PlayClip(_src, _src.clip, SoundManager.sInst.settings.interfaceVolume);
 				//On termine la sélection du personnage
 				_charSelDone = true;
 				//On désactive le bouton
@@ -163,7 +165,7 @@ public class CharAndTeeSelection : MonoBehaviour
 		}
 		else if (p.GetButtonDown("Cancel")) {
 			_src.clip = cancel;
-			_src.Play();
+			SoundManager.sInst.PlayClip(_src, _src.clip, SoundManager.sInst.settings.interfaceVolume);
 			//On reprend la sélection
 			_charSelDone = false;
 			//On réactive le bouton
@@ -198,7 +200,7 @@ public class CharAndTeeSelection : MonoBehaviour
 			//Si le joueur appuie sur le bouton de retour
 			if (p.GetButtonDown("Cancel")) {
 				_src.clip = cancel;
-				_src.Play();
+				SoundManager.sInst.PlayClip(_src, _src.clip, SoundManager.sInst.settings.interfaceVolume);
 				//On masque le drapeau
 				flag.SetActive(false);
 				//On repasse en mode sélection de personnage
@@ -210,7 +212,7 @@ public class CharAndTeeSelection : MonoBehaviour
 			//Si le joueur appuie sur le bouton Submit
 			if (p.GetButtonDown("Submit")) {
 				_src.clip = select;
-				_src.Play();
+				SoundManager.sInst.PlayClip(_src, _src.clip, SoundManager.sInst.settings.interfaceVolume);
 				//On termine la sélection du personnage
 				_teeSelDone = true;
 				//On désactive le bouton
@@ -229,7 +231,7 @@ public class CharAndTeeSelection : MonoBehaviour
 		}
 		else if (p.GetButtonDown("Cancel")) {
 			_src.clip = cancel;
-			_src.Play();
+			SoundManager.sInst.PlayClip(_src, _src.clip, SoundManager.sInst.settings.interfaceVolume);
 			_teeSelDone = false;
 			tenueImage.color = new Color(1f, 1f, 1f, 1f);
 			tenuesDispos[clothesSprites[_oldTIndex]] = true;
@@ -264,7 +266,7 @@ public class CharAndTeeSelection : MonoBehaviour
 			InfoSelect(array, nextPrev, ver);
 		}
 
-		_src.Play();
+		SoundManager.sInst.PlayClip(_src, _src.clip, SoundManager.sInst.settings.interfaceVolume);
 
 		_infoIndex = _vInd * array[0].transforms.Length + _hInd;
 	}

@@ -70,6 +70,14 @@ public class ScoreManager : MonoBehaviour
 		onGameOver?.Invoke();
 		StartCoroutine(GameEnd());
 	}
+
+	public delegate void OnDeathMatchEnter();
+	public static event OnDeathMatchEnter onDeathMatchEnter;
+	public void RaiseOnDeathMatch() {
+		if (!_deathMatch)
+			onDeathMatchEnter?.Invoke();
+		_deathMatch = true;
+	}
 	#endregion
 
 	#region Methods
@@ -77,12 +85,14 @@ public class ScoreManager : MonoBehaviour
 		onGameStart += SetEventsAndObjects;
 		GameManager.onGamePause += StopTimer;
 		GameManager.onGameResume += ResumeTimer;
+		onDeathMatchEnter += PlayDeath;
 	}
 
 	void OnDisable() {
 		onGameStart -= SetEventsAndObjects;
 		GameManager.onGamePause -= StopTimer;
 		GameManager.onGameResume -= ResumeTimer;
+		onDeathMatchEnter -= PlayDeath;
 	}
 
 	void Awake() {
@@ -164,6 +174,7 @@ public class ScoreManager : MonoBehaviour
 		}
 		else {
 			CheckDeathScore();
+			RaiseOnDeathMatch();
 		}
 	}
 
@@ -265,6 +276,11 @@ public class ScoreManager : MonoBehaviour
 	public void SetEventsAndObjects() {
 		GetComponent<EventMaster>().enabled = gs.events;
 		GetComponent<ReputationManager>().enabled = gs.objects;
+	}
+
+	public void PlayDeath() {
+		GetComponent<AudioSource>().volume = SoundManager.sInst.settings.masterVolume;
+		GetComponent<AudioSource>().Play();
 	}
 	#endregion
 

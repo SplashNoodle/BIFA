@@ -30,9 +30,7 @@ public class Goal : MonoBehaviour
 
 	public GameObject[] confetti = new GameObject[2];
 
-	public AudioClip goalClip;
-
-	public GlobalSettings settings;
+	public AudioClip[] goalClip;
 
     public enum Equipe
     {
@@ -63,7 +61,8 @@ public class Goal : MonoBehaviour
 	void OnTriggerEnter(Collider col) {
         if (col.CompareTag("Ballon")||col.CompareTag("GoldenBall")) {
 			RaiseOnGoal();
-			SoundManager.sInst.PlayClip(GetComponent<AudioSource>(), goalClip, goalVolume*settings.masterVolume*settings.effectsVolume);
+			int gSoundIndex = Random.Range(0, goalClip.Length);
+			SoundManager.sInst.PlayClip(GetComponent<AudioSource>(), goalClip[gSoundIndex], goalVolume*SoundManager.sInst.settings.effectsVolume);
             if (equipe == Equipe.Equipe1) {
                 ScoreManager.scoreInst.Score2++;
 				if(col.CompareTag("GoldenBall"))
@@ -78,6 +77,7 @@ public class Goal : MonoBehaviour
 				ScoreManager.scoreInst.UpdateDisplay(_equipTxt, ScoreManager.scoreInst.Score1);
                 ReputationManager.repInst.IncreaseRep(0, .1f);
             }
+			Confetti();
             _ = col.CompareTag("Ballon")?StartCoroutine(col.GetComponent<Ballon>().Respawn(1f)):StartCoroutine(col.GetComponent<Ballon>().RespawnGolden());
         }
 

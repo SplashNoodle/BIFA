@@ -18,7 +18,7 @@ public class SetGameSettings : MonoBehaviour
 	#region Private Variables
 	private int _value = 5, _ballIndex = 0;
 
-	private bool _canSelect = true;
+	private bool _canSelect = true, _allowChange = true;
 
 	private GameSettings.GameType _type = GameSettings.GameType.Score;
 
@@ -54,8 +54,6 @@ public class SetGameSettings : MonoBehaviour
 		p = ReInput.players.GetPlayer(pInfos.pIndex);
 
 		gs.settingsMode = GameSettings.SettingsMode.Type;
-		gs.events = true;
-		gs.objects = true;
 
 		ballTypeDisplay.text = ballTypes[0];
 		ballTypeDescDisplay.text = ballTypeDesc[0];
@@ -68,6 +66,9 @@ public class SetGameSettings : MonoBehaviour
 	}
 
 	void Update() {
+		if (p.GetAxis("Hor") == 0 && p.GetAxis("Ver") == 0)
+			_allowChange = true;
+
 		switch (gs.settingsMode) {
 			case GameSettings.SettingsMode.Type:
 				SetSelected(0);
@@ -75,12 +76,13 @@ public class SetGameSettings : MonoBehaviour
 					_canSelect = false;
 					SetGameType();
 				}
-				if(p.GetAxis("Hor") == 0)
+				if (p.GetAxis("Hor") == 0)
 					_canSelect = true;
 
-				if (p.GetButtonDown("Submit")||p.GetAxis("Ver")<0) {
+				if (p.GetButtonDown("Submit") || p.GetAxis("Ver") < 0) {
 					gs.gameType = _type;
 					gs.settingsMode = GameSettings.SettingsMode.Value;
+					_allowChange = false;
 				}
 				break;
 			case GameSettings.SettingsMode.Value:
@@ -92,29 +94,33 @@ public class SetGameSettings : MonoBehaviour
 				if (p.GetAxis("Hor") == 0)
 					_canSelect = true;
 
-				if (p.GetButtonDown("Submit") || p.GetAxis("Ver") < 0) {
+				if ((p.GetButtonDown("Submit") || p.GetAxis("Ver") < 0) && _allowChange) {
 					gs.value = _value;
 					gs.settingsMode = GameSettings.SettingsMode.Ball;
+					_allowChange = false;
 				}
-				if (p.GetButtonDown("Cancel") || p.GetAxis("Ver") >0) {
+				if ((p.GetButtonDown("Cancel") || p.GetAxis("Ver") > 0) && _allowChange) {
 					gs.settingsMode = GameSettings.SettingsMode.Type;
+					_allowChange = false;
 				}
 				break;
 			case GameSettings.SettingsMode.Ball:
 				SetSelected(2);
-				if (p.GetAxis("Ver") != 0 && _canSelect) {
+				if (p.GetAxis("Hor") != 0 && _canSelect) {
 					_canSelect = false;
 					SetBallType();
 				}
-				if (p.GetAxis("Ver") == 0)
+				if (p.GetAxis("Hor") == 0)
 					_canSelect = true;
 
-				if (p.GetButtonDown("Submit") || p.GetAxis("Hor") > 0) {
+				if ((p.GetButtonDown("Submit") || p.GetAxis("Ver") < 0) && _allowChange) {
 					gs.ballType = _ball;
 					gs.settingsMode = GameSettings.SettingsMode.Events;
+					_allowChange = false;
 				}
-				if (p.GetButtonDown("Cancel") || p.GetAxis("Hor") < 0) {
+				if ((p.GetButtonDown("Cancel") || p.GetAxis("Ver") > 0) && _allowChange) {
 					gs.settingsMode = GameSettings.SettingsMode.Value;
+					_allowChange = false;
 				}
 				break;
 			case GameSettings.SettingsMode.Events:
@@ -127,11 +133,13 @@ public class SetGameSettings : MonoBehaviour
 				if (p.GetButtonUp("Submit"))
 					_canSelect = true;
 
-				if (p.GetAxis("Hor")>0) {
+				if (p.GetAxis("Hor") > 0 && _allowChange) {
 					gs.settingsMode = GameSettings.SettingsMode.Objects;
+					_allowChange = false;
 				}
-				if (p.GetButtonDown("Cancel") || p.GetAxis("Ver") > 0) {
+				if ((p.GetButtonDown("Cancel") || p.GetAxis("Ver") > 0) && _allowChange) {
 					gs.settingsMode = GameSettings.SettingsMode.Ball;
+					_allowChange = false;
 				}
 				break;
 			case GameSettings.SettingsMode.Objects:
@@ -144,11 +152,13 @@ public class SetGameSettings : MonoBehaviour
 				if (p.GetButtonUp("Submit"))
 					_canSelect = true;
 
-				if (p.GetAxis("Ver") < 0) {
+				if (p.GetAxis("Ver") < 0 && _allowChange) {
 					gs.settingsMode = GameSettings.SettingsMode.Validation;
+					_allowChange = false;
 				}
-				if (p.GetButtonDown("Cancel") || p.GetAxis("Hor") < 0) {
+				if ((p.GetButtonDown("Cancel") || p.GetAxis("Hor") < 0) && _allowChange) {
 					gs.settingsMode = GameSettings.SettingsMode.Events;
+					_allowChange = false;
 				}
 				break;
 			case GameSettings.SettingsMode.Validation:
@@ -156,8 +166,9 @@ public class SetGameSettings : MonoBehaviour
 				if (p.GetButtonDown("Submit")) {
 					LoadSettings();
 				}
-				if (p.GetButtonDown("Cancel") || p.GetAxis("Ver") > 0) {
+				if ((p.GetButtonDown("Cancel") || p.GetAxis("Ver") > 0) && _allowChange) {
 					gs.settingsMode = GameSettings.SettingsMode.Objects;
+					_allowChange = false;
 				}
 				break;
 		}
@@ -230,9 +241,9 @@ public class SetGameSettings : MonoBehaviour
 
 	void SetBallType() {
 
-		if (p.GetAxis("Ver") < 0)
+		if (p.GetAxis("Hor") < 0)
 			_ballIndex++;
-		if (p.GetAxis("Ver") > 0)
+		if (p.GetAxis("Hor") > 0)
 			_ballIndex--;
 
 		_ballIndex = (int)Mathf.Repeat(_ballIndex, 3f);
@@ -254,6 +265,11 @@ public class SetGameSettings : MonoBehaviour
 
 	#region Public Methods
 	public void LoadSettings() {
+		Debug.Log("Game Type : " + gs.gameType);
+		Debug.Log("Value : " + gs.value);
+		Debug.Log("Ball Type : " + gs.ballType);
+		Debug.Log("Events Allowed : " + gs.events);
+		Debug.Log("Objects Allowed : " + gs.objects);
 		//On définit le type de partie dans le ScoreManager
 		ScoreManager.scoreInst.gt = gs.gameType;
 		//On définit le score max / le temps de la partie dans le ScoreManager

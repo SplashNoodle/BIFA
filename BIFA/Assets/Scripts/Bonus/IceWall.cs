@@ -10,16 +10,25 @@ public class IceWall : MonoBehaviour
 
 	private bool _startFreeze = false, _isFreezing = false;
 
+	private AudioSource _src;
+
 	private Stopwatch _freezeTimer = new Stopwatch(), _lTimer = new Stopwatch();
 
 	public float lifetime = 5f;
 
 	public GameObject iceWall, vapor;
 
+	public AudioClip iceClip;
+
 	void OnEnable() {
 		_lTimer.Start();
 		vapor.SetActive(true);
 		vapor.GetComponent<ParticleSystem>().Play();
+		if (!iceWall.GetComponent<AudioSource>())
+			iceWall.AddComponent<AudioSource>();
+		_src = iceWall.GetComponent<AudioSource>();
+		_src.playOnAwake = false;
+		_src.clip = iceClip;
 	}
 	void Update() {
 		_startFreeze = ReInput.players.GetPlayer(GetComponent<GamePlayer>().PlayerInfos.pIndex).GetButtonDown("AbButton2");
@@ -39,6 +48,7 @@ public class IceWall : MonoBehaviour
 		if (_freezeTimer.IsRunning) {
 			if (_freezeTimer.Elapsed.Seconds < _freezeDuration) {
 				_isFreezing = true;
+				_src.Play();
 			}
 			else {
 				_isFreezing = false;
