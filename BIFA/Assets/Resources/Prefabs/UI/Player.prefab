@@ -477,7 +477,7 @@ GameObject:
   - component: {fileID: 8021515345685255054}
   - component: {fileID: 4471803138652353442}
   m_Layer: 5
-  m_Name: Zlatan_Cyan
+  m_Name: BIFAmiibo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -500,7 +500,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 275, y: 275}
+  m_SizeDelta: {x: 410, y: 410}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8021515345685255054
 CanvasRenderer:
@@ -523,14 +523,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2bb0b1371ff843e49b3435e554212eb4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d4411c3ebfa71f5489658b3da87e0692, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

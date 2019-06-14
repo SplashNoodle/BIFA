@@ -24,6 +24,7 @@ public class GrabBall : MonoBehaviour
     }
 
     void Update() {
+		UpdateLine();
 		if (_player.UseBonus) {
 			_launched = true;
 			_lTimer.Stop();

@@ -2335,6 +2335,12 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 801650731502449162, guid: 16b621912aff819478b8e8b224d7c088,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: efb4f1784e9da7740a9e5399a68738f8,
+        type: 3}
     - target: {fileID: 5818045324455619296, guid: 16b621912aff819478b8e8b224d7c088,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -2355,6 +2361,12 @@ PrefabInstance:
       propertyPath: m_isInputParsingRequired
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3555253577905586977, guid: 16b621912aff819478b8e8b224d7c088,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 62a16c0061f189a4eacef5de10e3b671,
+        type: 3}
     - target: {fileID: 763254245821609425, guid: 16b621912aff819478b8e8b224d7c088,
         type: 3}
       propertyPath: m_havePropertiesChanged
@@ -2501,6 +2513,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fa839d60829f3f94cb8415a861dbc6cf, type: 3}
   - {fileID: 21300000, guid: 004e20d283d94f04a95a8e786bedfa63, type: 3}
   - {fileID: 21300000, guid: 865e7c18df3ffa54c89a15f7f184d099, type: 3}
+  move: {fileID: 0}
+  select: {fileID: 0}
+  cancel: {fileID: 0}
   pseudoDisplay: {fileID: 1232451501}
   pInfos: {fileID: 11400000, guid: ce85344d9aaba6a4da122b639259d0de, type: 2}
   mateInfos: {fileID: 0}
@@ -2544,6 +2559,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fa839d60829f3f94cb8415a861dbc6cf, type: 3}
   - {fileID: 21300000, guid: 004e20d283d94f04a95a8e786bedfa63, type: 3}
   - {fileID: 21300000, guid: 865e7c18df3ffa54c89a15f7f184d099, type: 3}
+  move: {fileID: 0}
+  select: {fileID: 0}
+  cancel: {fileID: 0}
   pseudoDisplay: {fileID: 1232451512}
   pInfos: {fileID: 11400000, guid: 7457b40b2d83b9542bbc759315a04dc1, type: 2}
   mateInfos: {fileID: 0}
@@ -2587,6 +2605,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fa839d60829f3f94cb8415a861dbc6cf, type: 3}
   - {fileID: 21300000, guid: 004e20d283d94f04a95a8e786bedfa63, type: 3}
   - {fileID: 21300000, guid: 865e7c18df3ffa54c89a15f7f184d099, type: 3}
+  move: {fileID: 0}
+  select: {fileID: 0}
+  cancel: {fileID: 0}
   pseudoDisplay: {fileID: 1232451517}
   pInfos: {fileID: 11400000, guid: da662e1e78b15564584e380653f0af70, type: 2}
   mateInfos: {fileID: 11400000, guid: ce85344d9aaba6a4da122b639259d0de, type: 2}
@@ -2630,6 +2651,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fa839d60829f3f94cb8415a861dbc6cf, type: 3}
   - {fileID: 21300000, guid: 004e20d283d94f04a95a8e786bedfa63, type: 3}
   - {fileID: 21300000, guid: 865e7c18df3ffa54c89a15f7f184d099, type: 3}
+  move: {fileID: 0}
+  select: {fileID: 0}
+  cancel: {fileID: 0}
   pseudoDisplay: {fileID: 1232451522}
   pInfos: {fileID: 11400000, guid: 27998d40e0be910459c7663a902859d0, type: 2}
   mateInfos: {fileID: 11400000, guid: 7457b40b2d83b9542bbc759315a04dc1, type: 2}
@@ -2681,8 +2705,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558f7ba873fa27847ac41d1e853d1abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Zlatan_CYAN
-  charSprite: {fileID: 21300000, guid: 6e68ce0f157b5804bb4d02bb77f9558f, type: 3}
+  charName: BIFAmiibo
+  charSprite: {fileID: 21300000, guid: af4951d1519062643a5bc0438cea21ba, type: 3}
   uiSprite: {fileID: 21300000, guid: 2bb0b1371ff843e49b3435e554212eb4, type: 3}
   teeSprite: {fileID: 0}
 --- !u!114 &1232451487
@@ -2729,9 +2753,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 558f7ba873fa27847ac41d1e853d1abe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Messi_BLEU
-  charSprite: {fileID: 21300000, guid: fa2b06e25f29d59498f3312c775c6284, type: 3}
-  uiSprite: {fileID: 21300000, guid: e83c44569c675624fbd7d3400e3cefaa, type: 3}
+  charName: LeRoua DlaNight
+  charSprite: {fileID: 21300000, guid: 57c016e93ffcaf1499559289471d711d, type: 3}
+  uiSprite: {fileID: 21300000, guid: abc096521a4a7bb47b16d20a4f137d13, type: 3}
   teeSprite: {fileID: 0}
 --- !u!114 &1232451490
 MonoBehaviour:

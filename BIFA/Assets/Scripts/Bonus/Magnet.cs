@@ -75,5 +75,6 @@ public class Magnet : MonoBehaviour
     private void OnDisable() {
         _timer.Reset();
 		_lTimer.Reset();
+		effect.SetActive(false);
     }
 }

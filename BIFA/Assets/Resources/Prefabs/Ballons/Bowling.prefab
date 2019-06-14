@@ -126,9 +126,9 @@ MonoBehaviour:
   _spawnEffect: {fileID: 0}
   defaultVolume: 0.3
   kicks:
-  - {fileID: 8300000, guid: adc85ca4afd212243bab98bcec28b158, type: 3}
-  - {fileID: 8300000, guid: a462d8d92e54b6c419fd68e30090f081, type: 3}
-  - {fileID: 8300000, guid: 6e608742cbff7ec4782aaed6669181a6, type: 3}
-  - {fileID: 8300000, guid: a6f2e352a6bebb043a05384c388462df, type: 3}
+  - {fileID: 8300000, guid: 3ab1508a2d10a144fb160d34a9d48d11, type: 3}
+  - {fileID: 8300000, guid: 5e9aa96c0d7fea346966e8ecf027196a, type: 3}
+  - {fileID: 8300000, guid: b6d216c52f3e71044a012d926b903550, type: 3}
+  - {fileID: 8300000, guid: d2500f005f67e7c46a2baaff0a2980ac, type: 3}
   bInfos: {fileID: 11400000, guid: 4ddaace8fd1c5864ea0e56bd8dbe7955, type: 2}
   settings: {fileID: 11400000, guid: 04c68bdd454155f4db4ba8d65d1538a3, type: 2}
